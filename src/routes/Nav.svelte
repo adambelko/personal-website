@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="container">
         <a class="navbar-brand" href="/">ADAM BELKO</a>
-        <ul class="nav navbar-nav">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a href="/articles" class="nav-link">ARTICLES</a>
             </li>
@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #FAFAFA;
+        background-color: var(--nav-bg-color);
         flex-wrap: nowrap;
         width: 100vw;
         height: 125px;
@@ -42,12 +42,12 @@
 
     .navbar-nav {
         display: flex;
-        gap: 1em;
+        gap: 2.2em;
         font-size: 0.8em;
         font-weight: 600;
     }
 
     a {
-        color: #323232;
+        color: var(--font-color-secondary-black);
     }
 </style>

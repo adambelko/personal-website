@@ -3,14 +3,23 @@
     padding: 0;
 }
 
+:root {
+    --font-color-primary-black: #212121;
+    --font-color-secondary-black: #323232;
+    --primary-orange: #FFC228;
+    --nav-bg-color: #FAFAFA;
+    --bg-color: #FFFFFF;
+    --font-default-size: 17px;
+}
+
 html {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 17px;
-    color: #212121;
-    background-color: #FFFFFF;
+    font-size: var(--font-default-size);
+    color: var(--font-color-primary-black);
+    background-color: var(--bg-color);
     box-sizing: border-box;
 }
 
