@@ -10,6 +10,7 @@
     --nav-bg-color: #FAFAFA;
     --bg-color: #FFFFFF;
     --font-default-size: 17px;
+    --hr-dividor-color: #e8e8e8;
 }
 
 html {
@@ -25,6 +26,7 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--font-color-primary-black);
 }
 
 ul {
