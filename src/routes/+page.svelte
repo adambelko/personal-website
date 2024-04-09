@@ -33,7 +33,6 @@
 
     .intro-small-font {
         font-size: var(--font-default-size);
-        font-weight: 500;
         padding-top: 2.5rem;
         max-width: 50%;
         text-align: center;
