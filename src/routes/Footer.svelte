@@ -1,7 +1,7 @@
 <footer class="footer">
     <hr>
     <div class="img-container">
-        <a href="https://kit.svelte.dev/">
+        <a href="https://kit.svelte.dev/" target="_blank">
             <img src="/Svelte_Logo.png" alt="Svelte-Logo"/>
         </a>
     </div>
