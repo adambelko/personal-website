@@ -28,7 +28,7 @@
     }
 
     .intro-highlighted {
-        color: var(--primary-orange)
+        color: var(--primary-color-orange)
     }
 
     .intro-small-font {
@@ -48,7 +48,7 @@
         font-size: 1.2em;
         font-weight: bold;
         padding: 0.8rem;
-        background-color: var(--primary-orange);
+        background-color: var(--primary-color-orange);
         border: 3px solid black;
         cursor: pointer;
     }

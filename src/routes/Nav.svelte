@@ -1,14 +1,21 @@
+<script>
+	import { page } from '$app/stores';
+	let path;
+
+	$: path = $page.url.pathname;
+</script>
+
 <nav class="navbar">
     <div class="container">
         <a class="navbar-brand" href="/">ADAM BELKO</a>
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class={path === '/articles' ? "nav-link active" : "nav-link"}>
                 <a href="/articles" class="nav-link">ARTICLES</a>
             </li>
-            <li class="nav-item">
+            <li class={path === '/contact' ? "nav-link active" : "nav-link"}>
                 <a href="/contact" class="nav-link">CONTACT</a>
             </li>
-            <li class="nav-item">
+            <li class={path === '/about' ? "nav-link active" : "nav-link"}>
                 <a href="/about" class="nav-link">ABOUT</a>
             </li>
         </ul>
@@ -47,7 +54,8 @@
         font-weight: 600;
     }
 
-    a {
-        color: var(--font-color-secondary-black);
+    .active {
+        text-decoration: underline solid var(--primary-color-orange) 3px;
+        text-underline-offset: 5px
     }
 </style>
