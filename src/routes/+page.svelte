@@ -1,8 +1,9 @@
 <div class="intro-container">
     <h1 class="intro-h1">
-        <span class="intro-first-section">Front End Developer</span>
-        <span class="intro-second-section">I build things for the web</span>
-        <span class="intro-third-section">Hey, my name is Adam and I love the process of turning coffee into a code, one line at a time!</span>
+        <span class="intro-medium-font">Hey, I'm Adam</span>
+        <span class="intro-highlighted">Front End Developer</span>
+        <span>I build things for the web</span>
+        <span class="intro-small-font">And I love the process of turning coffee into a code, one line at a time!</span>
     </h1>
     <a href="/contact">
         <button class="btn-contact-me">Get In Touch</button>
@@ -26,17 +27,21 @@
         padding-bottom: 3rem;
     }
 
-    .intro-first-section {
+    .intro-highlighted {
         color: var(--primary-orange)
     }
 
-    .intro-third-section {
+    .intro-small-font {
         font-size: var(--font-default-size);
         font-weight: 500;
         padding-top: 2.5rem;
         max-width: 50%;
         text-align: center;
         line-height: 1.6em;
+    }
+
+    .intro-medium-font {
+        font-size: 0.5em;
     }
 
     .btn-contact-me {
