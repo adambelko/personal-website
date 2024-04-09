@@ -6,8 +6,8 @@
         </a>
     </div>
     <div class="footer-text">
-        <span>BUILT WITH <a href="https://kit.svelte.dev/">SVELTEKIT</a></span>
-        <span>BY <a href="https://github.com/adambelko">ADAM BELKO</a></span>
+        <span>BUILT WITH <a href="https://kit.svelte.dev/" target="_blank">SVELTEKIT</a></span>
+        <span>BY <a href="https://github.com/adambelko/personal-website" target="_blank">ADAM BELKO</a></span>
     </div>
 </footer>
 
