@@ -18,10 +18,11 @@
             <img src="/my-profile-photo.jpeg" alt="adam-belko">
         </div>
     </div>
+
     <div class="tech-stack-container">
         <p>Here are a few technologies I’ve been working with recently:</p>
         <ul class="tech-stack-list">
-            <li>Javascript (ES6+)</li>
+            <li>JavaScript (ES6+)</li>
             <li>TypeScript</li>
             <li>React and Next.js</li>
             <li>Svelte and SvelteKit</li>
@@ -37,7 +38,8 @@
     .about-container {
         display: flex;
         flex-direction: column;
-        max-width: 960px;
+        max-width: 948px;
+        padding: 0 12px;
         margin: 3rem auto 0 auto;
     }
 

@@ -50,5 +50,10 @@
         background-color: var(--primary-color-orange);
         border: 3px solid black;
         cursor: pointer;
+        transition: background-color 0.15s;
+    }
+
+    .btn-contact-me:hover {
+        background-color: #ffd426;
     }
 </style>

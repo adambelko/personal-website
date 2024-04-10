@@ -31,6 +31,7 @@
         flex-wrap: nowrap;
         width: 100vw;
         height: 125px;
+        padding: 0 12px;
     }
 
     .container {
