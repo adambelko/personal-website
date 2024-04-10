@@ -9,14 +9,14 @@
     <div class="container">
         <a class="navbar-brand" href="/">ADAM BELKO</a>
         <ul class="navbar-nav">
-            <li class={path === '/articles' ? "nav-link active" : "nav-link"}>
-                <a href="/articles" class="nav-link">ARTICLES</a>
+            <li class={path === '/about' ? "nav-link active" : "nav-link"}>
+                <a href="/about" class="nav-link">ABOUT</a>
+            </li>
+            <li class={path === '/posts' ? "nav-link active" : "nav-link"}>
+                <a href="/posts" class="nav-link">POSTS</a>
             </li>
             <li class={path === '/contact' ? "nav-link active" : "nav-link"}>
                 <a href="/contact" class="nav-link">CONTACT</a>
-            </li>
-            <li class={path === '/about' ? "nav-link active" : "nav-link"}>
-                <a href="/about" class="nav-link">ABOUT</a>
             </li>
         </ul>
     </div>
