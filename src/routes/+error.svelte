@@ -1,0 +1,24 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
+<svelte:head>
+    <title>{$page.status}</title>
+</svelte:head>
+
+<div>
+    {#if $page.status === 404}
+        <h1>Not found!</h1>
+    {:else}
+        <h1>Something went wrong</h1>
+    {/if}
+</div>
+
+<style>
+    h1 {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 4.4em;
+        font-weight: bold;
+    }
+</style>
