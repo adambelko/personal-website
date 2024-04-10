@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Adam Belko</title>
+</svelte:head>
+
 <div class="intro-container">
     <h1 class="intro-h1">
         <span class="intro-medium-font">Hey, I'm Adam</span>
