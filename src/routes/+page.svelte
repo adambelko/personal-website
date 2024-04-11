@@ -70,4 +70,10 @@
     .btn-contact-me:hover {
         background-color: #ffd426;
     }
+
+    @media (max-width: 950px) {
+        h1 {
+            font-size: 2em;
+        }
+    }
 </style>

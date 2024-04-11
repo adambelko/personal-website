@@ -31,7 +31,6 @@
         flex-wrap: nowrap;
         width: 100vw;
         height: 125px;
-        padding: 0 12px;
     }
 
     .container {
@@ -46,6 +45,8 @@
     .navbar-brand {
         font-size: 1.3em;
         font-weight: bold;
+        padding-left: 12px;
+        padding-right: 30px;
     }
 
     .navbar-nav {
@@ -53,6 +54,7 @@
         gap: 2.2em;
         font-size: 0.8em;
         font-weight: 600;
+        padding: 0 12px;
     }
 
     .active {
