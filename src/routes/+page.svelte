@@ -3,12 +3,14 @@
 </svelte:head>
 
 <div class="intro-container">
-    <h1 class="intro-h1">
-        <span class="intro-medium-font">Hey, I'm Adam</span>
-        <span class="intro-highlighted">Front End Developer</span>
-        <span>I build things for the web</span>
-        <span class="intro-small-font">And I love the process of turning coffee into a code, one line at a time!</span>
-    </h1>
+    <div class="intro-text">
+        <span class="intro-text-medium-font">Hey, I'm Adam</span>
+        <h1 class="intro-text-h1">
+            <span class="intro-text-highlighted">Front End Developer</span>
+            <span>I build things for the web</span>
+        </h1>
+        <p class="intro-text-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
+    </div>
     <a href="/contact">
         <button class="btn-contact-me">Get In Touch</button>
     </a>
@@ -21,30 +23,38 @@
         align-items: center;
     }
 
-    .intro-h1 {
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6rem;
+    }
+
+    .intro-text-h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 4.4em;
         font-weight: bold;
-        padding-top: 6rem;
-        padding-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
-    .intro-highlighted {
+    .intro-text-highlighted {
         color: var(--primary-color-orange)
     }
 
-    .intro-small-font {
+    .intro-text-small-font {
         font-size: var(--font-default-size);
-        padding-top: 2.5rem;
         max-width: 50%;
         text-align: center;
         line-height: 1.6em;
+        margin-bottom: 2rem;
     }
 
-    .intro-medium-font {
-        font-size: 0.5em;
+    .intro-text-medium-font {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
     }
 
     .btn-contact-me {
