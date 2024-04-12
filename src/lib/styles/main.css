@@ -32,3 +32,8 @@ a {
 ul {
     list-style: none;
 }
+
+h1 {
+    font-size: 4.4em;
+    font-weight: bold;
+}

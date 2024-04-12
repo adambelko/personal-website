@@ -1,16 +1,15 @@
 <div class="about-container">
     <div class="intro-container">
         <div class="intro-text-container">
-            <h1 class="about-h1">Who Is Adam Belko?</h1>
+            <h1 class="about-h1">About me</h1>
             <p>
-                Hey there! Put simply, I enjoy making things for the web, specialising in Front-End side of
-                development.
+                Hey, I'm Front End Developer based in Sydney.
             </p>
             <br>
             <p>
-                When it comes to learning new technologies, my approach typically goes like this: read docs, experiment
-                (build projects), hitting issues, and then solving them. In other words I believe reading books or
-                watching YouTube tutorials only get you so far.
+                I am very passionate about technology and software, with a strong focus on code design, quality and
+                reliability. I strive to build things users love, with a keen eye for the way products look and the
+                interactions they offer.
             </p>
             <br>
         </div>
@@ -24,7 +23,7 @@
         <ul class="tech-stack-list">
             <li>JavaScript (ES6+)</li>
             <li>TypeScript</li>
-            <li>React and Next.js</li>
+            <li>React.js and Next.js</li>
             <li>Svelte and SvelteKit</li>
             <li>Node.js</li>
             <li>MongoDB</li>
@@ -38,9 +37,7 @@
     .about-container {
         display: flex;
         flex-direction: column;
-        max-width: 948px;
         padding: 0 12px;
-        margin: 3rem auto 0 auto;
     }
 
     .intro-container {
@@ -60,11 +57,6 @@
     }
 
     .about-h1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 4.4em;
-        font-weight: bold;
         padding-bottom: 0.4em;
     }
 

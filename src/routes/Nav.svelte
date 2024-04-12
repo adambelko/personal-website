@@ -37,9 +37,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 960px;
+        max-width: 1140px;
         width: 100%;
-        flex-wrap: inherit;
     }
 
     .navbar-brand {

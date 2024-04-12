@@ -17,8 +17,5 @@
 <style>
     h1 {
         text-align: center;
-        margin-top: 3rem;
-        font-size: 4.4em;
-        font-weight: bold;
     }
 </style>

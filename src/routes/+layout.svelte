@@ -12,4 +12,12 @@
 
 <Footer />
 
+<style>
+    main {
+        max-width: 1140px;
+        width: 100%;
+        margin: 4rem auto;
+    }
+</style>
+
 
