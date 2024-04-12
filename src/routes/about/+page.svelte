@@ -7,7 +7,7 @@
             </p>
             <br>
             <p>
-                I am very passionate about technology and software, with a strong focus on code design, quality and
+                Even though I don't have many years of experience under by belt I am very passionate about technology and software, with a strong focus on code design, quality and
                 reliability. I strive to build things users love, with a keen eye for the way products look and the
                 interactions they offer.
             </p>
@@ -18,19 +18,33 @@
         </div>
     </div>
 
-    <div class="tech-stack-container">
-        <p>Here are a few technologies I’ve been working with recently:</p>
-        <ul class="tech-stack-list">
-            <li>JavaScript (ES6+)</li>
-            <li>TypeScript</li>
-            <li>React.js and Next.js</li>
-            <li>Svelte and SvelteKit</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Git</li>
-            <li>GitHub</li>
-        </ul>
+    <div class="about-table">
+        <div class="about-table-item">
+            <p>A few technologies I’ve been working with recently:</p>
+            <ul class="about-table-list">
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>React.js and Next.js</li>
+                <li>Svelte and SvelteKit</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+        <div class="about-table-item about-table-item-right-side">
+            <p>Things I like to do:</p>
+            <ul class="about-table-list">
+                <li>Surfing</li>
+                <li>Outdoor activities</li>
+                <li>Learn new things</li>
+                <li>Daily stretch and exercise</li>
+                <li>Listen to podcasts</li>
+                <li>Read a good book</li>
+            </ul>
+        </div>
     </div>
+
 </div>
 
 <style>
@@ -42,6 +56,7 @@
 
     .intro-container {
         display: flex;
+        margin-bottom: 2em;
     }
 
     .intro-text-container {
@@ -61,19 +76,30 @@
     }
 
     .intro-text-container p{
-        font-size: 1.2em;
+        font-size: 1.2rem;
         line-height: 1.5em;
     }
 
-    .tech-stack-container p {
+    .about-table {
+        display: flex;
+        border: 2px solid var(--hr-dividor-color);
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    }
+
+    .about-table-item {
+        padding: 3.5em;
+    }
+
+    .about-table-item p {
         font-weight: bold;
     }
 
-    .tech-stack-container {
-        margin-top: 1.5em;
+    .about-table-item-right-side {
+        background-color: var(--nav-bg-color);
+        border-left: 2px solid var(--hr-dividor-color);
     }
 
-    .tech-stack-list {
+    .about-table-list {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 270px));
         list-style: disc;
