@@ -11,8 +11,8 @@
         </h1>
         <p class="intro-text-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
     </div>
-    <a href="/contact">
-        <button class="btn-contact-me">Get In Touch</button>
+    <a href="/about">
+        <button class="btn-about-me">More About Me</button>
     </a>
 </div>
 
@@ -27,15 +27,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .intro-text-h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 4.4em;
-        font-weight: bold;
         margin-bottom: 2rem;
     }
 
@@ -57,7 +55,7 @@
         margin-bottom: 0.3rem;
     }
 
-    .btn-contact-me {
+    .btn-about-me {
         font-size: 1.2em;
         font-weight: bold;
         padding: 0.8rem;
