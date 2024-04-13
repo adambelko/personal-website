@@ -13,8 +13,8 @@
             </p>
             <br>
         </div>
-        <div class="into-img-container">
-            <img src="/my-profile-photo.jpeg" alt="adam-belko">
+        <div class="intro-img-container">
+            <img src="/dev.svg" alt="adam-belko">
         </div>
     </div>
 
@@ -67,8 +67,9 @@
         padding-right: 12px;
     }
 
-    .into-img-container {
+    .intro-img-container {
         padding-left: 12px;
+        width: 50%;
     }
 
     .about-h1 {

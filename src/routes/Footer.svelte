@@ -20,10 +20,10 @@
     }
 
     hr {
-        margin-top: 11em;
+        margin-top: 15rem;
         margin-left: auto;
         margin-right: auto;
-        max-width: 960px;
+        max-width: 1140px;
         width: 100%;
         border-top: 1px solid var(--hr-dividor-color);
     }
