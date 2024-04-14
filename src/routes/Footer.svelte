@@ -28,10 +28,13 @@
         border-top: 1px solid var(--hr-dividor-color);
     }
 
+    .img-container {
+        margin-bottom: 2rem;
+    }
+
     .img-container img {
         max-width: 50px;
         margin-top: 4rem;
-        margin-bottom: 2rem;
     }
 
     .footer-text {
@@ -43,7 +46,8 @@
     }
 
     a:hover {
-        text-decoration: underline;
+        text-decoration: underline solid var(--primary-color-orange) 3px;
+        text-underline-offset: 5px
     }
 
 </style>
