@@ -65,7 +65,7 @@
         transition: background-color 0.15s;
     }
 
-    .btn-contact-me:hover {
+    .btn-about-me:hover {
         background-color: #ffd426;
     }
 

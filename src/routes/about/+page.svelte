@@ -45,6 +45,21 @@
         </div>
     </div>
 
+    <div class="experience">
+        <h2>Where I've been</h2>
+        <a href="https://www.archa.com.au/" target="_blank">
+            <div class="experience-item">
+                <div class="experience-item-company">
+                    <img src="/archamoney_logo.jpeg" alt="archa">
+                    <span>Archa</span>
+                </div>
+                <div class="experience-item-position">
+                    Front End Developer
+                </div>
+            </div>
+        </a>
+    </div>
+
 </div>
 
 <style>
@@ -109,6 +124,45 @@
         line-height: 1.5em;
         margin-top: 1em;
         padding-left: 1.5em;
+    }
+
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6em;
+        width: 50%;
+    }
+
+    .experience h2 {
+        margin-bottom: 1em;
+        font-size: 2.2rem;
+    }
+
+    .experience-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2.5em;
+        background-color: var(--nav-bg-color);
+        border-radius: 8px;
+        transition: all .2s ease-in-out;
+    }
+
+    .experience-item:hover {
+        transform: scale(1.02)
+    }
+
+    .experience-item img {
+        width: 50px;
+    }
+
+    .experience-item-company {
+        display: flex;
+        align-items: center;
+        gap: 0.7em;
+        font-size: 1.4rem;
+        font-weight: bold;
     }
 
 </style>
