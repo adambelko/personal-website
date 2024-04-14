@@ -3,7 +3,7 @@
         <div class="intro-text-container">
             <h1 class="about-h1">About me</h1>
             <p>
-                Hey, I'm Front End Developer based in Sydney.
+                Hey, I'm Front End Developer based in Sydney with a passion for always learning something new.
             </p>
             <br>
             <p>
@@ -145,6 +145,8 @@
         gap: 1em;
         padding: 2.5em;
         background-color: var(--nav-bg-color);
+        border: 2px solid var(--hr-dividor-color);
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
         border-radius: 8px;
         transition: all .2s ease-in-out;
     }

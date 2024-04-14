@@ -1,6 +1,6 @@
 <div class="posts-container">
-    <h1>Posts</h1>
-    <p>Welcome to my blog! Feel free to look around or take a seat and read an article or two.</p>
+    <h1>My posts</h1>
+    <p>A collection of posts I written.</p>
 </div>
 
 
