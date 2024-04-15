@@ -1,5 +1,7 @@
 <script>
-    import {urlFor} from "$lib/sanity.js"
+    import { urlFor } from "$lib/sanity.js"
+    import { formatDate } from "$lib/helpers/date.js"
+
 	export let data
 </script>
 
@@ -31,6 +33,12 @@
                     </a>
                 </div>
                 <div class="post-item-text">
+                    <div class="post-item-date-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="0.9em" viewBox="0 0 32 32">
+                            <path fill="#212121" d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4"/><path fill="#212121" d="M20.59 22L15 16.41V7h2v8.58l5 5.01z"/>
+                        </svg>
+                        <span>{formatDate(post._createdAt)}</span>
+                    </div>
                     <a href={post.slug.current}>
                         <div class="post-title">{post.title}</div>
                     </a>
@@ -110,13 +118,13 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
+        gap: 1.1em;
     }
 
     .post-item {
         display: flex;
         gap: 2em;
-        padding: 2em;
+        padding: 1.8em;
         background-color: var(--nav-bg-color);
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
@@ -128,7 +136,7 @@
         display: flex;
         align-items: center;
         flex-shrink: 0;
-        max-width: 200px;
+        max-width: 190px;
         height: auto;
     }
 
@@ -141,6 +149,25 @@
     .post-item-text {
         display: flex;
         flex-direction: column;
-        gap: 1.5em;
+        line-height: 1.3em;
     }
+
+    .post-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.1em;
+    }
+
+    .post-description {
+        margin-top: 1em;
+    }
+
+    .post-item-date-container {
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        font-size: .9em;
+        margin-bottom: .1em;
+    }
+
 </style>

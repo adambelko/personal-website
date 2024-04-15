@@ -37,7 +37,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1140px;
+        max-width: 1280px;
         width: 100%;
     }
 

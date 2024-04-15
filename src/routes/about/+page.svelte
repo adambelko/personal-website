@@ -126,7 +126,6 @@
         padding-left: 1.5em;
     }
 
-
     .experience {
         display: flex;
         flex-direction: column;
