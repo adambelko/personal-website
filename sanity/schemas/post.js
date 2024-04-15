@@ -1,5 +1,4 @@
-
-export const blog = {
+export const postSchema = {
 	name: "blog",
 	title: "Blog",
 	type: "document",
@@ -13,7 +12,7 @@ export const blog = {
 			name: "slug",
 			type: "slug",
 			title: "Slug",
-			options: {source: "title"}
+			options: { source: "title" }
 		},
 		{
 			name: "titleImage",
@@ -29,11 +28,13 @@ export const blog = {
 			name: "content",
 			type: "array",
 			title: "Content",
-			of: [
-				{
-					type: "block"
-				}
-			]
-		}
+			of: [{ type: "block" }]
+		},
+		{
+			name: "tags",
+			type: "array",
+			title: "Tags",
+			of: [{ type: "reference", to: { type: "tags" } }]
+		},
 	],
 }

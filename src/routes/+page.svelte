@@ -1,8 +1,9 @@
 <script>
-    import { urlFor } from "$lib/sanity.js"
+    import {urlFor} from "$lib/sanity/image.js"
     import { formatDate } from "$lib/helpers/date.js"
 
 	export let data
+	console.log(data)
 </script>
 
 <svelte:head>
@@ -43,6 +44,11 @@
                         <div class="post-title">{post.title}</div>
                     </a>
                     <div class="post-description">{post.smallDescription}</div>
+<!--                    <div class="post-tags">-->
+<!--                        {#each post.tags as tag}-->
+<!--                            <div class="post-tag">{tag}</div>-->
+<!--                        {/each}-->
+<!--                    </div>-->
                 </div>
             </article>
         {/each}
