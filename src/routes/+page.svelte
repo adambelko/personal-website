@@ -9,21 +9,22 @@
 </svelte:head>
 
 <div class="intro-container">
-    <div class="intro-text">
-        <span class="intro-text-medium-font">Hey, I'm Adam</span>
-        <h1 class="intro-text-h1">
-            <span class="intro-text-highlighted">Front End Developer</span>
+    <div class="intro-text-area">
+        <span class="text-area-medium-font">Hey, I'm Adam</span>
+        <h1 class="text-area-h1">
+            <span class="text-area-highlighted">Front End Developer</span>
             <span>I build things for the web</span>
         </h1>
-        <p class="intro-text-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
+        <p class="text-area-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
     </div>
     <a href="/about">
-        <button class="btn-about-me">More About Me</button>
+        <button class="intro-btn">More About Me</button>
     </a>
 </div>
-<div class="featured-posts">
+
+<div class="featured-posts-container">
     <h2>Featured posts</h2>
-    <div class="featured-posts-container">
+    <div class="post-list">
         <PostList data={data} />
     </div>
 </div>
@@ -35,25 +36,25 @@
         align-items: center;
     }
 
-    .intro-text {
+    .intro-text-area {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 2rem;
     }
 
-    .intro-text-h1 {
+    .text-area-h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
     }
 
-    .intro-text-highlighted {
+    .text-area-highlighted {
         color: var(--primary-color-orange)
     }
 
-    .intro-text-small-font {
+    .text-area-small-font {
         font-size: var(--font-default-size);
         max-width: 50%;
         text-align: center;
@@ -61,13 +62,13 @@
         margin-bottom: 2rem;
     }
 
-    .intro-text-medium-font {
+    .text-area-medium-font {
         font-size: 2em;
         font-weight: bold;
         margin-bottom: 0.3rem;
     }
 
-    .btn-about-me {
+    .intro-btn {
         font-size: 1.2em;
         font-weight: bold;
         padding: 0.8rem;
@@ -77,23 +78,23 @@
         transition: background-color 0.15s;
     }
 
-    .btn-about-me:hover {
+    .intro-btn:hover {
         background-color: var(--primary-color-orange-hover);
     }
 
-    .featured-posts {
+    .featured-posts-container {
         display: flex;
         flex-direction: column;
         margin-top: 10em;
     }
 
-    .featured-posts h2 {
+    .featured-posts-container h2 {
         display: flex;
         justify-content: center;
         margin-bottom: 1.5em;
     }
 
-    .featured-posts-container {
+    .post-list {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;

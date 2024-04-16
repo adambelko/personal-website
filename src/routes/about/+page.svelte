@@ -1,6 +1,6 @@
 <div class="about-container">
     <div class="intro-container">
-        <div class="intro-text-container">
+        <div class="intro-text-area">
             <h1 class="about-h1">About me</h1>
             <p>
                 Hey, I'm Front End Developer based in Sydney with a passion for always learning something new.
@@ -74,7 +74,7 @@
         margin-bottom: 2em;
     }
 
-    .intro-text-container {
+    .intro-text-area {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -91,7 +91,7 @@
         padding-bottom: 0.4em;
     }
 
-    .intro-text-container p{
+    .intro-text-area p{
         font-size: 1.2rem;
         line-height: 1.5em;
     }
@@ -165,5 +165,4 @@
         font-size: 1.4rem;
         font-weight: bold;
     }
-
 </style>

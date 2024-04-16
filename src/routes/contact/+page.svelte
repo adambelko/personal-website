@@ -1,5 +1,5 @@
 <div class="contact-container">
-    <h1 class="contact-h1">Let's get in touch</h1>
+    <h1>Let's get in touch</h1>
     <div class="secondary-text">
         <p>
             <a href="mailto:belkoadam@gmai.com" class="email">Pop me an email</a> at belkoadam@gmail.com

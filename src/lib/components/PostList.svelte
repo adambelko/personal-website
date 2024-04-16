@@ -19,16 +19,12 @@
                 </svg>
                 <span>{formatDate(post._createdAt)}</span>
             </div>
-            <a href="/posts/{post.slug.current}">
-                <div class="post-title">{post.title}</div>
-            </a>
+            <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
             <div class="post-description">{post.smallDescription}</div>
             {#if post.tags}
                 <div class="post-tag-list">
                     {#each post.tags as tag}
-                        <a href="/tags/{tag.slug.current}">
-                            <div class="post-tag">{tag.title}</div>
-                        </a>
+                        <a href="/tags/{tag.slug.current}" class="post-tag">{tag.title}</a>
                     {/each}
                 </div>
             {/if}

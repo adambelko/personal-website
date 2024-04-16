@@ -1,6 +1,13 @@
+<script>
+	import PostList from "$lib/components/PostList.svelte"
+
+    export let data
+</script>
+
 <div class="posts-container">
     <h1>My posts</h1>
     <p>A collection of posts I written.</p>
+    <PostList data={data} />
 </div>
 
 
