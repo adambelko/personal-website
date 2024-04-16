@@ -44,11 +44,15 @@
                         <div class="post-title">{post.title}</div>
                     </a>
                     <div class="post-description">{post.smallDescription}</div>
-<!--                    <div class="post-tags">-->
-<!--                        {#each post.tags as tag}-->
-<!--                            <div class="post-tag">{tag}</div>-->
-<!--                        {/each}-->
-<!--                    </div>-->
+                    {#if post.tags}
+                        <div class="post-tag-list">
+                            {#each post.tags as tag}
+                                <a href={tag.slug.current}>
+                                    <div class="post-tag">{tag.title}</div>
+                                </a>
+                            {/each}
+                        </div>
+                    {/if}
                 </div>
             </article>
         {/each}
@@ -105,7 +109,7 @@
     }
 
     .btn-about-me:hover {
-        background-color: #ffd426;
+        background-color: var(--primary-color-orange-hover);
     }
 
     .featured-posts {
@@ -165,7 +169,7 @@
     }
 
     .post-description {
-        margin-top: 1em;
+        margin: 1em 0;
     }
 
     .post-item-date-container {
@@ -174,6 +178,23 @@
         gap: 0.4em;
         font-size: .9em;
         margin-bottom: .1em;
+    }
+
+    .post-tag-list {
+        display: flex;
+        gap: 1em;
+    }
+
+    .post-tag {
+        font-size: .8rem;
+        padding: .1em .8em;
+        background-color: var(--primary-color-orange);
+        border: 2px solid var(--font-color-primary-black);
+        border-radius: .6em;
+    }
+
+    .post-tag:hover {
+        background-color: var(--primary-color-orange-hover);
     }
 
 </style>

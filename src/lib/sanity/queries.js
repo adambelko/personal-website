@@ -1,18 +1,11 @@
-// ----------- blog ------------
-export const getBlogQuery = `*[_type == "blog"]`
-
-// ----------- tags ------------
-export const getTagsQuery = `*[_type == "tags"]`
-
-export const getTagRelatedPostQuery = `*[_type == "blog" && $slug in tags[]->slug.current]{
-      _createdAt,
-      publishedAt,
+export const getPostsQuery = `*[_type == "blog"]
+  {
     title,
-    body,
     slug,
-    "tags": tags[]-> {title,slug},
-}`
+    smallDescription,
+    _createdAt,
+    titleImage,
+    tags[]->{slug, title}
+  }`
 
-export const tagsPathsQuery = `*[_type == "tags" && defined(slug.current)][]{
-  "params": { "slug": slug.current }
-}`
+export const getTagsQuery = `*[_type == "tags"]`

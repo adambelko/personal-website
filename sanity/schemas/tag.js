@@ -1,12 +1,12 @@
 export const tagSchema = {
-	name: 'tags',
-	title: 'Tags',
-	type: 'document',
+	name: "tags",
+	title: "Tags",
+	type: "document",
 	fields: [
 		{
-			name: 'title',
-			title: 'Title',
-			type: 'string',
+			name: "title",
+			title: "Title",
+			type: "string",
 		},
 		{
 			name: "slug",
