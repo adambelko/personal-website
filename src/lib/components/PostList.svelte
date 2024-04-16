@@ -20,7 +20,7 @@
                 <span>{formatDate(post._createdAt)}</span>
             </div>
             <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
-            <div class="post-description">{post.smallDescription}</div>
+            <p class="post-description">{post.smallDescription}</p>
             {#if post.tags}
                 <div class="post-tag-list">
                     {#each post.tags as tag}
