@@ -1,11 +1,14 @@
 <script>
+    // Sanity imports
     import { urlFor } from "$lib/sanity/image.js"
+
+    // Helper fn imports
     import { formatDate } from "$lib/helpers/date.js"
 
-    export let data
+    export let postList
 </script>
 
-{#each data.postList as post}
+{#each postList as post}
     <article class="post">
         <div class="post-img-container">
             <a href="/posts/{post.slug.current}">
@@ -24,7 +27,9 @@
             {#if post.tags}
                 <div class="post-tag-list">
                     {#each post.tags as tag}
-                        <a href="/tags/{tag.slug.current}" class="post-tag">{tag.title}</a>
+                        <a href="/tags/{tag.slug.current}">
+                            <div class="post-tag">{tag.title}</div>
+                        </a>
                     {/each}
                 </div>
             {/if}

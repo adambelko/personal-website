@@ -2,6 +2,7 @@
 	import PostList from "$lib/components/PostList.svelte"
 
 	export let data
+	console.log(data)
 </script>
 
 <svelte:head>
@@ -25,7 +26,7 @@
 <div class="featured-posts-container">
     <h2>Featured posts</h2>
     <div class="post-list">
-        <PostList data={data} />
+        <PostList postList={data.postList} />
     </div>
 </div>
 
