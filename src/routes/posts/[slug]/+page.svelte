@@ -1,7 +1,25 @@
 <script>
-    import {formatDate} from "$lib/helpers/date.js"
-	import {urlFor} from "$lib/sanity/image.js"
-	import {PortableText} from "@portabletext/svelte"
+    // Helper fn import
+    import { formatDate } from "$lib/helpers/date.js"
+
+    // Sanity import
+	import { urlFor } from "$lib/sanity/image.js"
+
+    // Content formatting imports
+	import { PortableText } from "@portabletext/svelte"
+    import CustomHeading from "$lib/components/postContent/CustomHeading.svelte"
+    import CustomParagraph from "$lib/components/postContent/CustomParagraph.svelte"
+    import Link from "$lib/components/postContent/Link.svelte"
+
+    export const postContent = {
+		marks: {
+			link: Link
+		},
+		block: {
+			normal: CustomParagraph,
+			h2: CustomHeading
+		}
+	}
 
 	export let data
 </script>
@@ -24,7 +42,7 @@
     </div>
 
     <div class="post-content">
-        <PortableText value={data.post.content} />
+        <PortableText value={data.post.content} components={postContent} />
     </div>
 </article>
 
