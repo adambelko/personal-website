@@ -22,7 +22,6 @@
 	}
 
 	export let data
-	console.log(data)
 </script>
 
 <article class="post-container">

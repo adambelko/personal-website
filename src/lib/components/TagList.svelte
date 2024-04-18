@@ -1,12 +1,15 @@
 <script>
 	export let tagList
+	export let slug
+
+	$: getTagClass = tag => tag.slug.current == slug ? "selectedTag" : ""
+
 </script>
 
 <div class="tag-list">
-
     {#each tagList as tag}
         <a href="/tags/{tag.slug.current}">
-            <div class="tag">{tag.title}</div>
+            <div class={`${getTagClass(tag)} tag`} >{tag.title}</div>
         </a>
     {/each}
 </div>
@@ -27,5 +30,9 @@
 
     .tag:hover {
         background-color: var(--primary-color-orange-hover);
+    }
+    .selectedTag,
+    .selectedTag:hover {
+        background-color: #c09eec;
     }
 </style>
