@@ -2,11 +2,11 @@
 import { client } from "$lib/sanity/client.js"
 
 // Sanity queries import
-import { getPostsQuery } from "$lib/sanity/queries.js"
+import { getPostQuery } from "$lib/sanity/queries.js"
 
-export async function load({params}) {
-	const postList = await client.fetch(getPostsQuery)
-	const post = postList.find((post) => post.slug.current === params.slug)
+export async function load({ params }) {
+	const query = await client.fetch(getPostQuery(params.slug))
+	const post = query[0]
 
 	return { post }
 }

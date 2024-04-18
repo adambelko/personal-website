@@ -12,7 +12,7 @@
     <article class="post">
         <div class="post-img-container">
             <a href="/posts/{post.slug.current}">
-                <img src={urlFor(post.titleImage).url()} alt={post.title}>
+                <img src={urlFor(post.titleImage).url()} alt={post.slug.current}>
             </a>
         </div>
         <div class="post-text-section">
@@ -22,7 +22,7 @@
                 </svg>
                 <span>{formatDate(post._createdAt)}</span>
             </div>
-            <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
+            <a href="/posts/{post.slug.current}" class="post-title">{post.slug.current}</a>
             <p class="post-description">{post.smallDescription}</p>
             {#if post.tags}
                 <div class="post-tag-list">

@@ -8,5 +8,5 @@ export async function load() {
 	const postList = await client.fetch(getPostsQuery)
 	const tagList = await client.fetch(getTagsQuery)
 
-	return {postList, tagList}
+	return { postList, tagList }
 }

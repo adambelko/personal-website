@@ -2,7 +2,6 @@
 	import PostList from "$lib/components/PostList.svelte"
 
 	export let data
-	console.log(data)
 </script>
 
 <svelte:head>
