@@ -22,11 +22,12 @@
     </a>
 </div>
 
-<div class="featured-posts-container">
-    <h2>Featured posts</h2>
+<div class="recent-posts-container">
+    <h2>Recent posts</h2>
     <div class="post-list">
         <PostList postList={data.postList} />
     </div>
+    <a href="/posts">See all posts</a>
 </div>
 
 <style>
@@ -82,16 +83,23 @@
         background-color: var(--primary-color-orange-hover);
     }
 
-    .featured-posts-container {
+    .recent-posts-container {
         display: flex;
         flex-direction: column;
         margin-top: 10em;
     }
 
-    .featured-posts-container h2 {
+    .recent-posts-container h2 {
         display: flex;
         justify-content: center;
         margin-bottom: 1.5em;
+    }
+
+    .recent-posts-container a {
+        margin-top: 1.5em;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
     }
 
     .post-list {

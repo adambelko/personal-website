@@ -14,7 +14,7 @@
             <br>
         </div>
         <div class="intro-img-container">
-            <img src="/dev.svg" alt="dev">
+            <img src="/adam-belko-dev-illustration.svg" alt="adam-belko-dev-illustration">
         </div>
     </div>
 
@@ -156,6 +156,7 @@
 
     .experience-item img {
         width: 50px;
+        border-radius: 5px;
     }
 
     .experience-item-company {

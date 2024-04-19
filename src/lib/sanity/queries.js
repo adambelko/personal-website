@@ -28,6 +28,16 @@ export const getPostsFilteredByTagQuery = (slug) => `*[_type == "blog" && refere
     tags[]-> { slug, title }
   }`
 
+export const getSearchedPostsQuery = (query) =>  `*[_type == "blog" && title match "${query}"]
+  {
+    title,
+    slug,
+    content,
+    smallDescription,
+    _createdAt,
+    titleImage,
+  }`
+
 export const getPostQuery = (slug) =>  `*[_type == "blog" && slug.current == "${slug}"]
   {
     title,

@@ -51,7 +51,7 @@
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: 620px;
+        width: 700px;
     }
 
     .post-date-container {

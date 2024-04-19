@@ -1,6 +1,6 @@
 <script>
 	export let tagList
-	export let slug
+	export let slug = ""
 
 	$: getTagClass = tag => tag.slug.current == slug ? "selectedTag" : ""
 

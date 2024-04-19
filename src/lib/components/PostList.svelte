@@ -22,7 +22,7 @@
                 </svg>
                 <span>{formatDate(post._createdAt)}</span>
             </div>
-            <a href="/posts/{post.slug.current}" class="post-title">{post.slug.current}</a>
+            <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
             <p class="post-description">{post.smallDescription}</p>
             {#if post.tags}
                 <div class="post-tag-list">
