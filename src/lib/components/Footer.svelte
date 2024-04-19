@@ -22,11 +22,6 @@
         border-top: 1px solid var(--hr-dividor-color);
     }
 
-    .img-container img {
-        max-width: 50px;
-        margin-top: 4rem;
-    }
-
     .footer-text {
         display: flex;
         flex-direction: column;

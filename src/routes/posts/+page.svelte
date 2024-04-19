@@ -40,24 +40,24 @@
         gap: 1.1em;
     }
 
-    .search-container {
-        display: flex;
-        align-items: center;
-        border-radius: .5em;
-        margin-bottom: 1rem;
-        border: 2px solid var(--font-color-secondary-black);
-        width: 30%;
-    }
+    /*.search-container {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    border-radius: .5em;*/
+    /*    margin-bottom: 1rem;*/
+    /*    border: 2px solid var(--font-color-secondary-black);*/
+    /*    width: 30%;*/
+    /*}*/
 
-    svg {
-        margin: .5em;
-    }
+    /*svg {*/
+    /*    margin: .5em;*/
+    /*}*/
 
 
-    .search-input {
-        font-size: 1.5rem;
-        padding: 0.2em;
-        width: 100%;
-        border: none;
-    }
+    /*.search-input {*/
+    /*    font-size: 1.5rem;*/
+    /*    padding: 0.2em;*/
+    /*    width: 100%;*/
+    /*    border: none;*/
+    /*}*/
 </style>
