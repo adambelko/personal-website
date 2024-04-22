@@ -36,14 +36,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1280px;
+        max-width: 1120px;
         width: 100%;
     }
 
     .navbar-brand {
         font-size: 1.3em;
         font-weight: bold;
-        padding-left: 12px;
         padding-right: 30px;
     }
 
@@ -52,7 +51,6 @@
         gap: 2.2em;
         font-size: 0.8em;
         font-weight: 600;
-        padding: 0 12px;
     }
 
     .active {

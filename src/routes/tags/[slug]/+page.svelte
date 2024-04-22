@@ -10,14 +10,16 @@
 
     <div class="navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-            <path fill="#212121" d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z" />
+            <path fill="#212121"
+                  d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/>
         </svg>
         <a href="/posts">Go to all posts</a>
     </div>
-    <TagList tagList={data.tagList} slug={data.slug} />
+
+    <TagList tagList={data.tagList} slug={data.slug}/>
 
     <div class="post-list">
-        <PostList postList={data.postList} />
+        <PostList postList={data.postList}/>
     </div>
 </div>
 
@@ -26,6 +28,8 @@
     .page-container {
         display: flex;
         flex-direction: column;
+        width: 860px;
+        margin: auto;
     }
 
     h1 {
@@ -45,6 +49,4 @@
         flex-direction: column;
         gap: 1.1em;
     }
-
-
 </style>

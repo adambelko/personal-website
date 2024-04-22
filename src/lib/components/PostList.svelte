@@ -8,53 +8,62 @@
     export let postList
 </script>
 
-{#each postList as post}
-    <article class="post">
-        <div class="post-img-container">
-            <a href="/posts/{post.slug.current}">
-                <img src={urlFor(post.titleImage).url()} alt={post.slug.current}>
-            </a>
-        </div>
-        <div class="post-text-section">
-            <div class="post-date-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="0.9em" viewBox="0 0 32 32">
-                    <path fill="#212121" d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4"/><path fill="#212121" d="M20.59 22L15 16.41V7h2v8.58l5 5.01z"/>
-                </svg>
-                <span>{formatDate(post._createdAt)}</span>
+
+<div class="post-list">
+    {#each postList as post}
+        <article class="post">
+            <div class="post-img-container">
+                <a href="/posts/{post.slug.current}">
+                    <img src={urlFor(post.titleImage).url()} alt={post.slug.current}>
+                </a>
             </div>
-            <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
-            <p class="post-description">{post.smallDescription}</p>
-            {#if post.tags}
-                <div class="post-tag-list">
-                    {#each post.tags as tag}
-                        <a href="/tags/{tag.slug.current}">
-                            <div class="post-tag">{tag.title}</div>
-                        </a>
-                    {/each}
+            <div class="post-text-section">
+                <div class="post-date-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="0.9em" viewBox="0 0 32 32">
+                        <path fill="#212121" d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4"/><path fill="#212121" d="M20.59 22L15 16.41V7h2v8.58l5 5.01z"/>
+                    </svg>
+                    <span>{formatDate(post._createdAt)}</span>
                 </div>
-            {/if}
-        </div>
-    </article>
-{/each}
+                <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
+                <p class="post-description">{post.smallDescription}</p>
+                {#if post.tags}
+                    <div class="post-tag-list">
+                        {#each post.tags as tag}
+                            <a href="/tags/{tag.slug.current}">
+                                <div class="post-tag">{tag.title}</div>
+                            </a>
+                        {/each}
+                    </div>
+                {/if}
+            </div>
+        </article>
+    {/each}
+</div>
 
 <style>
+    .post-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .post {
         display: flex;
         gap: 2em;
         padding: 1.8em;
+        max-width: 860px;
         background-color: var(--nav-bg-color);
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
         border-radius: 8px;
-        transition: all .2s ease-in-out;
     }
 
     .post-img-container {
         display: flex;
         align-items: center;
+        max-width: 280px;
         flex-shrink: 0;
-        max-width: 190px;
-        height: auto;
     }
 
     .post-img-container img {

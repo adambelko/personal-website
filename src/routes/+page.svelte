@@ -24,9 +24,9 @@
 
 <div class="recent-posts-container">
     <h2>Recent posts</h2>
-    <div class="post-list">
-        <PostList postList={data.postList} />
-    </div>
+
+    <PostList postList={data.postList} />
+
     <a href="/posts">See all posts</a>
 </div>
 
@@ -100,12 +100,5 @@
         font-size: 1.3rem;
         font-weight: bold;
         text-align: center;
-    }
-
-    .post-list {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.1em;
     }
 </style>

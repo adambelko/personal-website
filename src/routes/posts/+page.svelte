@@ -1,5 +1,4 @@
 <script>
-	// Svelte components imports
 	import PostList from "$lib/components/PostList.svelte"
 	import TagList from "$lib/components/TagList.svelte"
 
@@ -7,8 +6,6 @@
 </script>
 
 <div class="page-container">
-    <h1>My posts</h1>
-
 <!--    <div class="search-container">-->
 <!--        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">-->
 <!--            <path fill="#212121" d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8m0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6" />-->
@@ -16,28 +13,21 @@
 <!--        <input class="search-input" placeholder="Search posts" type="search" bind:value={searchQuery} on:input={() => searchPosts(searchQuery)} />-->
 <!--    </div>-->
 
-    <TagList tagList={data.tagList} />
-
-    <div class="post-list">
-        <PostList postList={data.postList} />
-    </div>
+    <h1>My posts</h1>
+    <TagList tagList={data.tagList}/>
+    <PostList postList={data.postList}/>
 </div>
-
 
 <style>
     .page-container {
         display: flex;
         flex-direction: column;
+        width: 860px;
+        margin: auto;
     }
 
     h1 {
         margin-bottom: 1em;
-    }
-
-    .post-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.1em;
     }
 
     /*.search-container {*/

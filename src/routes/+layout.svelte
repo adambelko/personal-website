@@ -2,11 +2,6 @@
     // Styles import
     import "$lib/styles/main.css"
 
-    // Vercel analytics imports and setup
-	import { dev } from "$app/environment"
-	import { inject } from "@vercel/analytics"
-	inject({ mode: dev ? "development" : "production" })
-
     // Svelte component imports
 	import Analytics from "$lib/components/Analytics.svelte"
     import Nav from "$lib/components/Nav.svelte"
@@ -25,7 +20,7 @@
 
 <style>
     main {
-        max-width: 1280px;
+        max-width: 1120px;
         width: 100%;
         margin: 4rem auto;
     }

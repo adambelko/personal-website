@@ -17,12 +17,16 @@
 		},
 		block: {
 			normal: CustomParagraph,
-			h2: CustomHeading
-		}
+			h2: CustomHeading,
+		},
 	}
 
 	export let data
 </script>
+
+<svelte:head>
+    <title>{data.post.title}</title>
+</svelte:head>
 
 <article class="post-container">
     <div class="post-date-container">

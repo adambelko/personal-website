@@ -7,7 +7,7 @@
             </p>
             <br>
             <p>
-                Even though I don't have many years of experience under my belt I am very passionate about technology and software, with a strong focus on code design, quality and
+                Even though I don't have many years of experience under my belt, I am very passionate about technology and software, with a strong focus on code design, quality and
                 reliability. I strive to build things users love, with a keen eye for the way products look and the
                 interactions they offer.
             </p>
