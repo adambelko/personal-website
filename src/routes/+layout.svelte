@@ -3,14 +3,17 @@
     import "$lib/styles/main.css"
 
     // Vercel analytics imports and setup
-	import { dev } from '$app/environment'
-	import { inject } from '@vercel/analytics'
-	inject({ mode: dev ? 'development' : 'production' })
+	import { dev } from "$app/environment"
+	import { inject } from "@vercel/analytics"
+	inject({ mode: dev ? "development" : "production" })
 
     // Svelte component imports
+	import Analytics from "$lib/components/Analytics.svelte"
     import Nav from "$lib/components/Nav.svelte"
     import Footer from "$lib/components/Footer.svelte"
 </script>
+
+<Analytics />
 
 <Nav />
 
