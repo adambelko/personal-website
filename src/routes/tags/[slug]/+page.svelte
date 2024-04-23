@@ -9,9 +9,11 @@
     <h1>Filtered posts</h1>
 
     <div class="navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-            <path fill="#212121"
-                  d="M7 17h7v-2H7zm0-4h10v-2H7zm0-4h10V7H7zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+            <g fill="none">
+                <path stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h14" />
+                <path fill="#212121" d="m2.285 11.797l5.45-3.893A.8.8 0 0 1 9 8.554v6.891a.8.8 0 0 1-1.265.651l-5.45-3.893a.25.25 0 0 1 0-.406" />
+            </g>
         </svg>
         <a href="/posts">Go to all posts</a>
     </div>

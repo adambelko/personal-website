@@ -47,7 +47,6 @@
 
     <div class="experience">
         <h2>Where I've been</h2>
-        <a href="https://www.archa.com.au/" target="_blank">
             <div class="experience-item">
                 <div class="experience-item-company">
                     <img src="/archamoney_logo.jpeg" alt="archa">
@@ -57,7 +56,6 @@
                     Front End Developer
                 </div>
             </div>
-        </a>
     </div>
 
 </div>
@@ -147,11 +145,6 @@
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
         border-radius: 8px;
-        transition: all .2s ease-in-out;
-    }
-
-    .experience-item:hover {
-        transform: scale(1.02)
     }
 
     .experience-item img {

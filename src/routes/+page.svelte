@@ -27,7 +27,15 @@
 
     <PostList postList={data.postList} />
 
-    <a href="/posts">See all posts</a>
+    <div class="navigation">
+        <a href="/posts">See all posts</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24">
+            <g fill="none">
+                <path stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12H3" />
+                <path fill="#212121" d="m21.715 11.797l-5.45-3.893a.8.8 0 0 0-1.265.65v6.891a.8.8 0 0 0 1.265.651l5.45-3.893a.25.25 0 0 0 0-.406" />
+            </g>
+        </svg>
+    </div>
 </div>
 
 <style>
@@ -76,6 +84,7 @@
         background-color: var(--primary-color-orange);
         border: 3px solid black;
         cursor: pointer;
+        border-radius: .6rem;
         transition: background-color 0.15s;
     }
 
@@ -95,10 +104,12 @@
         margin-bottom: 1.5em;
     }
 
-    .recent-posts-container a {
-        margin-top: 1.5em;
-        font-size: 1.3rem;
+    .navigation {
+        display: flex;
+        align-items: center;
+        gap: .3em;
+        margin: 1.5rem auto;
         font-weight: bold;
-        text-align: center;
+        font-size: 1.3rem;
     }
 </style>

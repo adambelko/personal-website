@@ -17,7 +17,7 @@
         margin-top: 15rem;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1280px;
+        max-width: 1120px;
         width: 100%;
         border-top: 1px solid var(--hr-dividor-color);
     }

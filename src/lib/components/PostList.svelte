@@ -27,13 +27,15 @@
                 <a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
                 <p class="post-description">{post.smallDescription}</p>
                 {#if post.tags}
-                    <div class="post-tag-list">
+                    <ul class="post-tag-list">
                         {#each post.tags as tag}
-                            <a href="/tags/{tag.slug.current}">
-                                <div class="post-tag">{tag.title}</div>
-                            </a>
+                            <li>
+                                <a href="/tags/{tag.slug.current}">
+                                    <div class="post-tag">{tag.title}</div>
+                                </a>
+                            </li>
                         {/each}
-                    </div>
+                    </ul>
                 {/if}
             </div>
         </article>
@@ -104,9 +106,10 @@
     .post-tag {
         font-size: .8rem;
         padding: .1em .8em;
+        border-radius: .6em;
         background-color: var(--primary-color-orange);
         border: 2px solid var(--font-color-primary-black);
-        border-radius: .6em;
+        transition: background-color 0.15s;
     }
 
     .post-tag:hover {

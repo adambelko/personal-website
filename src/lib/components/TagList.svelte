@@ -6,13 +6,13 @@
 
 </script>
 
-<div class="tag-list">
+<ul class="tag-list">
     {#each tagList as tag}
-        <a href="/tags/{tag.slug.current}">
-            <div class={`${getTagClass(tag)} tag`} >{tag.title}</div>
-        </a>
+            <li class={`${getTagClass(tag)} tag`}>
+                <a href="/tags/{tag.slug.current}">{tag.title}</a>
+            </li>
     {/each}
-</div>
+</ul>
 
 <style>
     .tag-list {
@@ -23,9 +23,11 @@
 
     .tag {
         padding: .3em 1.2em;
+        border-radius: .6em;
         background-color: var(--primary-color-orange);
         border: 2px solid var(--font-color-primary-black);
-        border-radius: .8em;
+        transition: background-color 0.15s;
+        cursor: pointer;
     }
 
     .tag:hover {
