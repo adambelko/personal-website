@@ -55,6 +55,7 @@
         gap: 2em;
         padding: 1.8em;
         max-width: 860px;
+        width: 100%;
         background-color: var(--nav-bg-color);
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
