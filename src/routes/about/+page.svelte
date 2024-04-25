@@ -45,17 +45,33 @@
         </div>
     </div>
 
-    <div class="experience">
+    <div class="experience-container section">
         <h2>Where I've been</h2>
-            <div class="experience-item">
-                <div class="experience-item-company">
-                    <img src="/archamoney_logo.jpeg" alt="archa">
-                    <span>Archa</span>
-                </div>
-                <div class="experience-item-position">
-                    Front End Developer
+        <div class="experience-item section-item">
+            <div class="experience-item-company">
+                <img src="/archamoney_logo.jpeg" alt="archa">
+                <span>Archa</span>
+            </div>
+            <div class="experience-item-position">
+                Front End Developer
+            </div>
+        </div>
+    </div>
+
+    <div class="references-container section">
+        <h2>What people say</h2>
+        <div class="reference section-item">
+            <p class="reference-body">
+                "In the time that we've worked together, I've been impressed by Adam's eagerness to learn and grow. Despite being early in his career, Adam has a solid foundation in front-end technologies such as JavaScript, TypeScript, React, and NextJS and a genuine passion for the future development of his skills. What sets Adam apart is his curiosity and proactive approach to challenges. Adam is not afraid to ask questions, seek guidance, and dive into new concepts headfirst."
+            </p>
+            <div class="reference-footer">
+                <img src="/Lukas-Aron.jpeg" alt="lukas-aron">
+                <div class="reference-footer-text">
+                    <span>Lukas Aron</span>
+                    <span>CTO at Archa</span>
                 </div>
             </div>
+        </div>
     </div>
 
 </div>
@@ -98,6 +114,7 @@
         display: flex;
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+        border-radius: .5rem;
     }
 
     .about-table-item {
@@ -124,27 +141,33 @@
         padding-left: 1.5em;
     }
 
-    .experience {
+    .section {
         display: flex;
         flex-direction: column;
         margin-top: 6em;
-        width: 50%;
     }
 
-    .experience h2 {
+    .section h2 {
         margin-bottom: 1em;
         font-size: 2.2rem;
     }
 
-    .experience-item {
+    .section-item {
         display: flex;
         flex-direction: column;
-        gap: 1em;
-        padding: 2.5em;
-        background-color: var(--nav-bg-color);
         border: 2px solid var(--hr-dividor-color);
         box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-        border-radius: 8px;
+        border-radius: .5rem;
+        padding: 2.8em;
+        gap: 1em;
+    }
+
+    .experience-container {
+        width: 50%;
+    }
+
+    .experience-item {
+        background-color: var(--nav-bg-color);
     }
 
     .experience-item img {
@@ -158,5 +181,26 @@
         gap: 0.7em;
         font-size: 1.4rem;
         font-weight: bold;
+    }
+
+    .references-container {
+        position: relative;
+        width: 40%;
+        line-height: 1.5rem;
+    }
+
+    .reference-footer img {
+        max-width: 50px;
+        border-radius: 5rem;
+    }
+
+    .reference-footer {
+        display: flex;
+        gap: .8rem;
+    }
+
+    .reference-footer-text {
+        display: flex;
+        flex-direction: column;
     }
 </style>
