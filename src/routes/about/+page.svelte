@@ -58,17 +58,32 @@
         </div>
     </div>
 
-    <div class="references-container section">
+    <div class="section">
         <h2>What people say</h2>
-        <div class="reference section-item">
-            <p class="reference-body">
-                "In the time that we've worked together, I've been impressed by Adam's eagerness to learn and grow. Despite being early in his career, Adam has a solid foundation in front-end technologies such as JavaScript, TypeScript, React, and NextJS and a genuine passion for the future development of his skills. What sets Adam apart is his curiosity and proactive approach to challenges. Adam is not afraid to ask questions, seek guidance, and dive into new concepts headfirst."
-            </p>
-            <div class="reference-footer">
-                <img src="/Lukas-Aron.jpeg" alt="lukas-aron">
-                <div class="reference-footer-text">
-                    <span>Lukas Aron</span>
-                    <span>CTO at Archa</span>
+        <div class="references-container">
+            <div class="reference section-item">
+                <p class="reference-body">
+                    "In the time that we've worked together, I've been impressed by Adam's eagerness to learn and grow. Despite being early in his career, Adam has a solid foundation in front-end technologies such as JavaScript, TypeScript, React, and NextJS and a genuine passion for the future development of his skills. What sets Adam apart is his curiosity and proactive approach to challenges. Adam is not afraid to ask questions, seek guidance, and dive into new concepts headfirst."
+                </p>
+                <div class="reference-footer">
+                    <img src="/Lukas-Aron.jpeg" alt="lukas-aron">
+                    <div class="reference-footer-text">
+                        <span>Lukas Aron</span>
+                        <span>CTO at Archa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reference section-item">
+                <p class="reference-body">
+                    "Adam's dedication to learning and his friendly, honest nature have made him a valuable asset to our team. He approaches every task with enthusiasm and is always eager to expand his skill set. Adam's positive attitude and professionalism make him a pleasure to work with. I have no doubt he will excel in his future endeavours and highly recommend him to any prospective employer."
+                </p>
+                <div class="reference-footer">
+                    <img src="/Joe-Chance.jpeg" alt="joe-chance">
+                    <div class="reference-footer-text">
+                        <span>Joe Chance</span>
+                        <span>Senior Software Engineer at Archa</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,9 +199,14 @@
     }
 
     .references-container {
-        position: relative;
-        width: 40%;
+        display: flex;
+        gap: 1rem;
         line-height: 1.5rem;
+    }
+
+    .reference {
+        justify-content: space-between;
+        width: 50%;
     }
 
     .reference-footer img {
