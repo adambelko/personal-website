@@ -19,10 +19,7 @@
     </div>
 
     <TagList tagList={data.tagList} slug={data.slug}/>
-
-    <div class="post-list">
-        <PostList postList={data.postList}/>
-    </div>
+    <PostList postList={data.postList}/>
 </div>
 
 
@@ -44,11 +41,5 @@
         gap: .2em;
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
-    }
-
-    .post-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.1em;
     }
 </style>

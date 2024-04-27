@@ -82,7 +82,7 @@
         font-weight: bold;
         padding: 0.8rem;
         background-color: var(--primary-color-orange);
-        border: 3px solid black;
+        border: 3px solid var(--font-color-primary-black);
         cursor: pointer;
         border-radius: .6rem;
         transition: background-color 0.15s;
@@ -95,6 +95,7 @@
     .recent-posts-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 10em;
     }
 
