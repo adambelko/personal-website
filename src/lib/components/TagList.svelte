@@ -8,9 +8,13 @@
 
 <ul class="tag-list">
     {#each tagList as tag}
-            <li class={`${getTagClass(tag)} tag`}>
-                <a href="/tags/{tag.slug.current}">{tag.title}</a>
-            </li>
+        <li>
+            <a href="/tags/{tag.slug.current}">
+                <div class={`${getTagClass(tag)} tag`}>
+                    {tag.title}
+                </div>
+            </a>
+        </li>
     {/each}
 </ul>
 
@@ -33,6 +37,7 @@
     .tag:hover {
         background-color: var(--primary-color-orange-hover);
     }
+
     .selectedTag,
     .selectedTag:hover {
         background-color: #c09eec;
