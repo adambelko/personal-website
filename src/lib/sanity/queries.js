@@ -1,52 +1,33 @@
-export const getRecentPostsQuery = `*[_type == "blog"] | order(_createdAt desc) [0..3]
-  {
-    title,
+const base = `
+	title,
     slug,
     smallDescription,
     _createdAt,
-    titleImage,
-    tags[]-> { slug, title }
-  }`
+    titleImage
+`
 
-export const getPostsQuery = `*[_type == "blog"] | order(_createdAt desc)
+export const recentPostsQuery = `*[_type == "blog"] | order(_createdAt desc) [0..3]
   {
-    title,
-    slug,
-    smallDescription,
-    _createdAt,
-    titleImage,
+    ${base},
     tags[]-> { slug, title }
   }`
 
-export const getPostsFilteredByTagQuery = (slug) => `*[_type == "blog" && references(tags[].slug.current, 
+export const allPostsQuery = `*[_type == "blog"] | order(_createdAt desc)
+  {
+    ${base},
+    tags[]-> { slug, title }
+  }`
+
+export const postsFilteredByTagQuery = (slug) => `*[_type == "blog" && references(tags[].slug.current, 
   *[_type == "tags" && slug.current == "${slug}"]._id)] | order(_createdAt desc) {
-    title,
-    slug,
-    smallDescription,
-    _createdAt,
-    titleImage,
+    ${base},
     tags[]-> { slug, title }
   }`
 
-export const getSearchedPostsQuery = (query) =>  `*[_type == "blog" && title match "${query}"]
+export const singlePostQuery = (slug) =>  `*[_type == "blog" && slug.current == "${slug}"]
   {
-    title,
-    slug,
-    content,
-    smallDescription,
-    _createdAt,
-    titleImage,
+    ${base},
+    content
   }`
 
-export const getPostQuery = (slug) =>  `*[_type == "blog" && slug.current == "${slug}"]
-  {
-    title,
-    slug,
-    content,
-    smallDescription,
-    _createdAt,
-    titleImage,
-  }`
-
-
-export const getTagsQuery = `*[_type == "tags"]`
+export const allTagsQuery = `*[_type == "tags"]`
