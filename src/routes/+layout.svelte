@@ -3,7 +3,7 @@
     import "$lib/styles/main.css"
 
     // Svelte component imports
-	import Analytics from "$lib/components/Analytics.svelte"
+    import Analytics from "$lib/components/Analytics.svelte"
     import Nav from "$lib/components/Nav.svelte"
     import Footer from "$lib/components/Footer.svelte"
 </script>

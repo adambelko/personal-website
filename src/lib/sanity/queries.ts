@@ -18,13 +18,13 @@ export const allPostsQuery = `*[_type == "blog"] | order(_createdAt desc)
     tags[]-> { slug, title }
   }`
 
-export const postsFilteredByTagQuery = (slug) => `*[_type == "blog" && references(tags[].slug.current, 
+export const postsFilteredByTagQuery = (slug: string) => `*[_type == "blog" && references(tags[].slug.current, 
   *[_type == "tags" && slug.current == "${slug}"]._id)] | order(_createdAt desc) {
     ${base},
     tags[]-> { slug, title }
   }`
 
-export const singlePostQuery = (slug) =>  `*[_type == "blog" && slug.current == "${slug}"]
+export const singlePostQuery = (slug: string) =>  `*[_type == "blog" && slug.current == "${slug}"]
   {
     ${base},
     content

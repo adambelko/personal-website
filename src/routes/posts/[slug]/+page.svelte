@@ -1,15 +1,16 @@
 <script>
     // Helper fn import
-    import { formatDate } from "$lib/helpers/date.js"
+    import { formatDate } from "$lib/helpers/date"
 
     // Sanity import
-	import { urlFor } from "$lib/sanity/image.js"
+    import { urlFor } from "$lib/sanity/image"
 
     // Content formatting imports
-	import { PortableText } from "@portabletext/svelte"
+	  import { PortableText } from "@portabletext/svelte"
     import CustomHeading from "$lib/components/postContent/CustomHeading.svelte"
     import CustomParagraph from "$lib/components/postContent/CustomParagraph.svelte"
     import Link from "$lib/components/postContent/Link.svelte"
+
 
     export const postContent = {
 		marks: {

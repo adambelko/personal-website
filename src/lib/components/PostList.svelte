@@ -1,9 +1,9 @@
 <script>
     // Sanity imports
-    import { urlFor } from "$lib/sanity/image.js"
+    import { urlFor } from "$lib/sanity/image"
 
     // Helper fn imports
-    import { formatDate } from "$lib/helpers/date.js"
+    import { formatDate } from "$lib/helpers/date"
 
     export let postList
 </script>

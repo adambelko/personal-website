@@ -1,8 +1,8 @@
 // Sanity import
-import { client } from "$lib/sanity/client.js"
+import { client } from "$lib/sanity/client"
 
 // Sanity queries import
-import { singlePostQuery } from "$lib/sanity/queries.js"
+import { singlePostQuery } from "$lib/sanity/queries"
 
 export async function load({ params }) {
 	const query = await client.fetch(singlePostQuery(params.slug))

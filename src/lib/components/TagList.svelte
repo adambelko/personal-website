@@ -3,7 +3,6 @@
 	export let slug = ""
 
 	$: getTagClass = tag => tag.slug.current === slug ? "selectedTag" : ""
-
 </script>
 
 <ul class="tag-list">
