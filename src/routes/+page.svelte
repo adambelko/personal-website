@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Adam Belko</title>
+    <title>Adam Belko - Front End Software Developer</title>
 </svelte:head>
 
 <div class="intro-container">

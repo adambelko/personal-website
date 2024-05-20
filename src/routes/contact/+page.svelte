@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Adam Belko - Front End Software Developer</title>
+</svelte:head>
+
 <div class="contact-container">
     <h1>Let's get in touch</h1>
     <div class="secondary-text">

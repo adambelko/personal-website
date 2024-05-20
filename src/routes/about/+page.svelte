@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Adam Belko - Front End Software Developer</title>
+</svelte:head>
+
 <div class="about-container">
     <div class="intro-container">
         <div class="intro-text-area">

@@ -5,6 +5,10 @@
 	export let data
 </script>
 
+<svelte:head>
+    <title>Adam Belko - Front End Software Developer</title>
+</svelte:head>
+
 <div class="page-container">
     <h1>Filtered posts</h1>
 
