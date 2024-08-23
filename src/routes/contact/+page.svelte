@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Adam Belko - Front End Software Developer</title>
+	<title>Contact</title>
 </svelte:head>
 
 <div class="contact-container">

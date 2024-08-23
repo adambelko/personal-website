@@ -6,14 +6,15 @@
 </script>
 
 <div>
-    {#if style === "normal"}
-        <p class="p"><slot /></p>
-    {/if}
+	{#if style === "normal"}
+		<p class="p">
+			<slot />
+		</p>
+	{/if}
 </div>
 
 <style>
-    .p {
-        margin-top: 1rem;
-    }
-
+	.p {
+		margin-top: 1rem;
+	}
 </style>

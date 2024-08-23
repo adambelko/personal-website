@@ -1,19 +1,18 @@
 <script>
-  export let portableText
+	export let portableText
 
-  $: ({ value } = portableText)
-  console.log(value)
+	$: ({ value } = portableText)
 </script>
 
 <div>
-    <a href={value.url} class="link" target="_blank">
-        <slot />
-    </a>
+	<a href={value.url} class="link" target="_blank">
+		<slot />
+	</a>
 </div>
 
 <style>
-    .link {
-        text-decoration: underline solid var(--primary-color-orange) 2px;
-        text-underline-offset: 5px
-    }
+	.link {
+		text-decoration: underline solid var(--primary-color-orange) 2px;
+		text-underline-offset: 5px;
+	}
 </style>

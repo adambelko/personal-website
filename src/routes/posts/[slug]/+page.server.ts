@@ -1,7 +1,4 @@
-// Sanity import
 import { client } from "$lib/sanity/client"
-
-// Sanity queries import
 import { singlePostQuery } from "$lib/sanity/queries"
 
 export async function load({ params }) {

@@ -1,12 +1,12 @@
 <script>
-	import PostList from '$lib/components/PostList.svelte';
-	import TagList from '$lib/components/TagList.svelte';
+	import PostList from "$lib/components/PostList.svelte"
+	import TagList from "$lib/components/TagList.svelte"
 
-	export let data;
+	export let data
 </script>
 
 <svelte:head>
-	<title>Adam Belko - Front End Software Developer</title>
+	<title>Tags</title>
 </svelte:head>
 
 <div class="page-container">

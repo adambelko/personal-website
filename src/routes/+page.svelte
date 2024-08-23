@@ -1,11 +1,15 @@
 <script>
-	import PostList from '$lib/components/PostList.svelte';
-
-	export let data;
+	import PostList from "$lib/components/PostList.svelte"
+	
+	export let data
 </script>
 
 <svelte:head>
-	<title>Adam Belko - Front End Software Developer</title>
+	<title>Adam Belko - Software Developer</title>
+	<meta
+		content="Hey! I'm a software developer passionate about technology, code quality, building things for the web,
+	 creating user-friendly, aesthetically pleasing products."
+	/>
 </svelte:head>
 
 <div class="intro-container">
