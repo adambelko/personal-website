@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Icon from "@iconify/svelte"
 	import { formatDate } from "$lib/helpers/date"
 	import { urlFor } from "$lib/sanity/image"
 	import { PortableText } from "@portabletext/svelte"
@@ -25,13 +26,7 @@
 
 <article class="post-container">
 	<div class="post-date-container">
-		<svg xmlns="http://www.w3.org/2000/svg" width="0.9em" height="0.9em" viewBox="0 0 32 32">
-			<path
-				fill="#212121"
-				d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4"
-			/>
-			<path fill="#212121" d="M20.59 22L15 16.41V7h2v8.58l5 5.01z" />
-		</svg>
+		<Icon icon="wi:time-4" width="1.2em" height="1.2em" style="color: black" />
 		<span>{formatDate(data.post._createdAt)}</span>
 	</div>
 
@@ -58,7 +53,10 @@
 	}
 
 	.post-date-container {
-		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.2em;
 	}
 
 	.post-title {
