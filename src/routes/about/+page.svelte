@@ -6,16 +6,12 @@
 	<div class="intro-container">
 		<div class="intro-text-area">
 			<h1 class="about-h1">About me</h1>
-			<p>
-				Hey, I'm Front End Developer based in Sydney with a passion for always learning something
-				new.
-			</p>
+			<p>Hey, I'm Software Developer based in Sydney with a passion for always learning something new.</p>
 			<br />
 			<p>
-				Even though I don't have many years of experience under my belt, I am very passionate about
-				technology and software, with a strong focus on code design, quality and reliability. I
-				strive to build things users love, with a keen eye for the way products look and the
-				interactions they offer.
+				Even though I don't have many years of experience under my belt, I am very passionate about technology
+				and software, with a strong focus on code design, quality and reliability. I strive to build things
+				users love, with a keen eye for the way products look and the interactions they offer.
 			</p>
 			<br />
 		</div>
@@ -28,12 +24,12 @@
 		<div class="about-table-item">
 			<p>A few technologies I’ve been working with recently:</p>
 			<ul class="about-table-list">
-				<li>JavaScript (ES6+)</li>
-				<li>TypeScript</li>
-				<li>React.js and Next.js</li>
+				<li>Javascript (ES6+)</li>
+				<li>Typescript</li>
+				<li>React and Next</li>
 				<li>Svelte and SvelteKit</li>
-				<li>Node.js</li>
-				<li>MongoDB</li>
+				<li>Node and Express</li>
+				<li>MongoDB, PostgreSQL</li>
 				<li>Git</li>
 				<li>GitHub</li>
 			</ul>
@@ -41,12 +37,12 @@
 		<div class="about-table-item about-table-item-right-side">
 			<p>Things I like to do:</p>
 			<ul class="about-table-list">
-				<li>Surfing</li>
-				<li>Outdoor activities</li>
+				<li>Go for a surf</li>
+				<li>Outdoor stuff</li>
 				<li>Learn new things</li>
 				<li>Daily stretch and exercise</li>
-				<li>Listen to podcasts</li>
-				<li>Read a good book</li>
+				<li>Listen to a podcasts</li>
+				<li>Tell bad jokes</li>
 			</ul>
 		</div>
 	</div>
@@ -67,12 +63,11 @@
 		<div class="references-container">
 			<div class="reference section-item">
 				<p class="reference-body">
-					"In the time that we've worked together, I've been impressed by Adam's eagerness to learn
-					and grow. Despite being early in his career, Adam has a solid foundation in front-end
-					technologies such as JavaScript, TypeScript, React, and NextJS and a genuine passion for
-					the future development of his skills. What sets Adam apart is his curiosity and proactive
-					approach to challenges. Adam is not afraid to ask questions, seek guidance, and dive into
-					new concepts headfirst."
+					"In the time that we've worked together, I've been impressed by Adam's eagerness to learn and grow.
+					Despite being early in his career, Adam has a solid foundation in front-end technologies such as
+					JavaScript, TypeScript, React, and NextJS and a genuine passion for the future development of his
+					skills. What sets Adam apart is his curiosity and proactive approach to challenges. Adam is not
+					afraid to ask questions, seek guidance, and dive into new concepts headfirst."
 				</p>
 				<div class="reference-footer">
 					<img src="/Lukas-Aron.jpeg" alt="lukas-aron" />
@@ -85,11 +80,10 @@
 
 			<div class="reference section-item">
 				<p class="reference-body">
-					"Adam's dedication to learning and his friendly, honest nature have made him a valuable
-					asset to our team. He approaches every task with enthusiasm and is always eager to expand
-					his skill set. Adam's positive attitude and professionalism make him a pleasure to work
-					with. I have no doubt he will excel in his future endeavours and highly recommend him to
-					any prospective employer."
+					"Adam's dedication to learning and his friendly, honest nature have made him a valuable asset to our
+					team. He approaches every task with enthusiasm and is always eager to expand his skill set. Adam's
+					positive attitude and professionalism make him a pleasure to work with. I have no doubt he will
+					excel in his future endeavours and highly recommend him to any prospective employer."
 				</p>
 				<div class="reference-footer">
 					<img src="/Joe-Chance.jpeg" alt="joe-chance" />

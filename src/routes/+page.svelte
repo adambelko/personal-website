@@ -15,9 +15,9 @@
 
 <div class="intro-container">
 	<div class="intro-text-area">
-		<span class="text-area-medium-font">Hey, I'm Adam</span>
+		<p class="text-area-medium-font">Hey, I'm Adam</p>
 		<h1 class="text-area-h1">
-			<span class="text-area-highlighted">Front End Developer</span>
+			<span class="text-area-highlighted">Software Developer</span>
 			<span>I build things for the web</span>
 		</h1>
 		<p class="text-area-small-font">
@@ -25,7 +25,10 @@
 		</p>
 	</div>
 	<a href="/about">
-		<button class="intro-btn">More About Me</button>
+		<button class="intro-btn">
+			About me
+			<Icon icon="lets-icons:arrow-right-long" width="1.3em" height="1.3em" style="color: black" />
+		</button>
 	</a>
 </div>
 
@@ -80,6 +83,9 @@
 	}
 
 	.intro-btn {
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding: 0.8rem;
