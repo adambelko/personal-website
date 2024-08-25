@@ -29,7 +29,7 @@
 		background-color: var(--nav-bg-color);
 		flex-wrap: nowrap;
 		width: 100vw;
-		height: 125px;
+		min-height: 125px;
 	}
 
 	.container {

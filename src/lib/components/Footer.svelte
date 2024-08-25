@@ -1,11 +1,7 @@
 <footer class="footer">
 	<hr />
 	<div class="footer-text">
-		<span
-			>BUILT BY <a href="https://github.com/adambelko/personal-website" target="_blank"
-				>ADAM BELKO</a
-			></span
-		>
+		<span>BUILT BY <a href="https://github.com/adambelko/personal-website" target="_blank">ADAM BELKO</a></span>
 	</div>
 </footer>
 
@@ -18,9 +14,7 @@
 	}
 
 	hr {
-		margin-top: 15rem;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 		max-width: 1120px;
 		width: 100%;
 		border-top: 1px solid var(--hr-dividor-color);

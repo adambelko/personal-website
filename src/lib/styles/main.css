@@ -14,7 +14,9 @@
     --hr-dividor-color: #e8e8e8;
 }
 
-html {
+html, body {
+    display: flex;
+    flex-direction: column;
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -23,6 +25,7 @@ html {
     color: var(--font-color-primary-black);
     background-color: var(--bg-color);
     box-sizing: border-box;
+    height: 100%;
 }
 
 a {

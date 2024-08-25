@@ -17,8 +17,11 @@
 
 <style>
 	main {
-		max-width: 1120px;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
 		width: 100%;
+		max-width: 1120px;
 		margin: 4rem auto;
 	}
 </style>

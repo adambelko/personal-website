@@ -20,9 +20,7 @@
 			<span class="text-area-highlighted">Software Developer</span>
 			<span>I build things for the web</span>
 		</h1>
-		<p class="text-area-small-font">
-			And I love the process of turning coffee into a code, one line at a time!
-		</p>
+		<p class="text-area-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
 	</div>
 	<a href="/about">
 		<button class="intro-btn">
