@@ -1,8 +1,12 @@
 <script>
 	import "$lib/styles/main.css"
+	import { fade } from "svelte/transition"
 	import Analytics from "$lib/components/Analytics.svelte"
 	import Nav from "$lib/components/Nav.svelte"
 	import Footer from "$lib/components/Footer.svelte"
+
+	export let data
+	const transitionDuration = 150
 </script>
 
 <Analytics />
@@ -10,7 +14,14 @@
 <Nav />
 
 <main>
-	<slot />
+	{#key data.url}
+		<div
+			in:fade={{ duration: transitionDuration, delay: transitionDuration }}
+			out:fade={{ duration: transitionDuration }}
+		>
+			<slot />
+		</div>
+	{/key}
 </main>
 
 <Footer />

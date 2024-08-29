@@ -6,7 +6,7 @@
 	<div class="intro-container">
 		<div class="intro-text-area">
 			<h1 class="about-h1">About me</h1>
-			<p>Hey, I'm Software Developer based in Sydney with a passion for always learning something new.</p>
+			<p>Hey, I'm a Software Developer based in Sydney with a passion for always learning something new.</p>
 			<br />
 			<p>
 				Even though I don't have many years of experience under my belt, I am very passionate about technology
