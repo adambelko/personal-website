@@ -1,29 +1,51 @@
 <script>
-	import PostList from '$lib/components/PostList.svelte';
-	import TagList from '$lib/components/TagList.svelte';
+	import PostList from "$lib/components/PostList.svelte"
+	import TagList from "$lib/components/TagList.svelte"
 
-	export let data;
+	export let data
 </script>
 
 <svelte:head>
-	<title>Posts</title>
+    <title>Posts</title>
 </svelte:head>
 
-<div class="page-container">
-	<h1>My posts</h1>
-	<TagList tagList={data.tagList} />
-	<PostList postList={data.postList} />
+<div class="container">
+    <div class="page-container">
+        <div class="inside-container">
+            <h1>My posts</h1>
+            <TagList tagList={data.tagList} />
+        </div>
+        <PostList postList={data.postList} />
+    </div>
 </div>
 
 <style>
-	.page-container {
-		display: flex;
-		flex-direction: column;
-		width: 860px;
-		margin: auto;
-	}
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 0 12px;
+    }
 
-	h1 {
-		margin-bottom: 1em;
-	}
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 860px;
+        align-items: center;
+        margin: auto;
+    }
+
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    .inside-container {
+        align-self: flex-start;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 880px) {
+        h1 {
+            font-size: 2.8rem;
+        }
+    }
 </style>

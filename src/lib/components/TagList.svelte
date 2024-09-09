@@ -41,4 +41,16 @@
     .selectedTag:hover {
         background-color: #c09eec;
     }
+
+    /* Responsive styles */
+    @media (max-width: 880px) {
+        .tag-list {
+            gap: 0.4rem;
+        }
+
+        .tag {
+            font-size: 1rem;
+            padding: 0.2em 1em;
+        }
+    }
 </style>
