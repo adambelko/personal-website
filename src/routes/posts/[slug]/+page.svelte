@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Icon from "@iconify/svelte"
 	import { formatDate } from "$lib/helpers/date"
 	import { urlFor } from "$lib/sanity/image"
@@ -7,7 +7,9 @@
 	import CustomParagraph from "$lib/components/postContent/CustomParagraph.svelte"
 	import Link from "$lib/components/postContent/Link.svelte"
 
-	export const postContent = {
+	export let data
+
+	const postContent = {
 		marks: {
 			link: Link
 		},
@@ -16,8 +18,6 @@
 			h2: CustomHeading
 		}
 	}
-
-	export let data
 </script>
 
 <svelte:head>
