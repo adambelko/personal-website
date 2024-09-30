@@ -6,11 +6,9 @@
 		value.url.startsWith("http://") || value.url.startsWith("https://") ? value.url : `https://${value.url}`
 </script>
 
-<div>
-	<a href={finalUrl} class="link" target="_blank" rel="noopener noreferrer">
-		<slot />
-	</a>
-</div>
+<a href={finalUrl} class="link" target="_blank" rel="noopener noreferrer">
+	<slot />
+</a>
 
 <style>
 	.link {

@@ -6,7 +6,7 @@ const base = `
     titleImage
 `
 
-export const recentPostsQuery = `*[_type == "blog"] | order(_createdAt desc) [0..3] {${base}, tags[]-> { slug, title }}`
+export const recentPostsQuery = `*[_type == "blog"] | order(_createdAt desc) [0..2] {${base}, tags[]-> { slug, title }}`
 
 export const allPostsQuery = `*[_type == "blog"] | order(_createdAt desc) {${base}, tags[]-> { slug, title }}`
 
