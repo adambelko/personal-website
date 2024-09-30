@@ -15,7 +15,7 @@
 
 	hr {
 		margin: 0 auto;
-		max-width: 1120px;
+		max-width: 1100px;
 		width: 100%;
 		border-top: 1px solid var(--hr-dividor-color);
 	}
