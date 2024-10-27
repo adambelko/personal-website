@@ -7,15 +7,16 @@
 :root {
     --font-color-primary-black: #212121;
     --font-color-secondary-black: #323232;
-    --primary-color-orange: #FFC226;
+    --primary-color-orange: #ffc226;
     --primary-color-orange-hover: #ffd426;
-    --nav-bg-color: #FAFAFA;
-    --bg-color: #FFFFFF;
+    --nav-bg-color: #fafafa;
+    --bg-color: #ffffff;
     --font-default-size: 17px;
     --hr-dividor-color: #e8e8e8;
 }
 
-html, body {
+html,
+body {
     display: flex;
     flex-direction: column;
     font-family: "Figtree", sans-serif;

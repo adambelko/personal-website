@@ -1,5 +1,5 @@
-export const load = ({url}) => {
-    return {
-        url: url.pathname
-    }
+export const load = ({ url }) => {
+	return {
+		url: url.pathname
+	}
 }
