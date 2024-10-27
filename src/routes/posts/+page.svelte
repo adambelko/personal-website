@@ -2,7 +2,7 @@
 	import PostList from "$lib/components/PostList.svelte"
 	import TagList from "$lib/components/TagList.svelte"
 
-	export let data
+	let { data } = $props()
 </script>
 
 <svelte:head>

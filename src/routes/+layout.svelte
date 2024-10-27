@@ -5,7 +5,7 @@
 	import Nav from "$lib/components/Nav.svelte"
 	import Footer from "$lib/components/Footer.svelte"
 
-	export let data
+	let { data, children } = $props()
 	const transitionDuration = 150
 </script>
 
@@ -19,7 +19,7 @@
 			in:fade={{ duration: transitionDuration, delay: transitionDuration }}
 			out:fade={{ duration: transitionDuration }}
 		>
-			<slot />
+			{@render children?.()}
 		</div>
 	{/key}
 </main>

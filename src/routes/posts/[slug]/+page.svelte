@@ -7,7 +7,7 @@
 	import CustomParagraph from "$lib/components/postContent/CustomParagraph.svelte"
 	import Link from "$lib/components/postContent/Link.svelte"
 
-	export let data
+	let { data } = $props()
 
 	const postContent = {
 		marks: {

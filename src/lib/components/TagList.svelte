@@ -1,8 +1,14 @@
 <script>
-	export let tagList
-	export let slug = ""
+	/**
+	 * @typedef {Object} Props
+	 * @property {any} tagList
+	 * @property {string} [slug]
+	 */
 
-	$: getTagClass = (tag) => (tag.slug.current === slug ? "selectedTag" : "")
+	/** @type {Props} */
+	let { tagList, slug = "" } = $props()
+
+	let getTagClass = $derived((tag) => (tag.slug.current === slug ? "selectedTag" : ""))
 </script>
 
 <ul class="tag-list">

@@ -1,7 +1,7 @@
 <script>
 	import { page } from "$app/stores"
 
-	$: path = $page.url.pathname
+	let path = $derived($page.url.pathname)
 </script>
 
 <nav class="navbar">

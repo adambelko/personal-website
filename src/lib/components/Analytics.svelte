@@ -1,14 +1,14 @@
 <script>
 	import { page } from "$app/stores"
 
-	$: {
+	$effect(() => {
 		if (typeof gtag !== "undefined") {
 			gtag("config", "MEASUREMENT_ID", {
 				page_title: document.title,
 				page_path: $page.url.pathname
 			})
 		}
-	}
+	})
 </script>
 
 <svelte:head>

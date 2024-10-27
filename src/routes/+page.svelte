@@ -2,7 +2,7 @@
 	import Icon from "@iconify/svelte"
 	import PostList from "$lib/components/PostList.svelte"
 
-	export let data
+	let { data } = $props()
 </script>
 
 <svelte:head>

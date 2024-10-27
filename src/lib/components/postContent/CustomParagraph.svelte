@@ -1,14 +1,14 @@
 <script>
-	export let portableText
+	let { portableText, children } = $props()
 
-	$: ({ value } = portableText)
-	$: ({ style } = value)
+	let { value } = $derived(portableText)
+	let { style } = $derived(value)
 </script>
 
 <div>
 	{#if style === "normal"}
 		<p class="p">
-			<slot />
+			{@render children?.()}
 		</p>
 	{/if}
 </div>

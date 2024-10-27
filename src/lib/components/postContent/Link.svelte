@@ -1,13 +1,14 @@
 <script>
-	export let portableText
+	let { portableText, children } = $props()
 
-	$: ({ value } = portableText)
-	$: finalUrl =
+	let { value } = $derived(portableText)
+	let finalUrl = $derived(
 		value.url.startsWith("http://") || value.url.startsWith("https://") ? value.url : `https://${value.url}`
+	)
 </script>
 
 <a href={finalUrl} class="link" target="_blank" rel="noopener noreferrer">
-	<slot />
+	{@render children?.()}
 </a>
 
 <style>

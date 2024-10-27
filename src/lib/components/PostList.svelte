@@ -3,7 +3,7 @@
 	import { formatDate } from "$lib/helpers/date"
 	import Icon from "@iconify/svelte"
 
-	export let postList
+	let { postList } = $props()
 </script>
 
 <div class="post-list">
