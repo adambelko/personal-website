@@ -1,4 +1,5 @@
 <script>
+	/* global gtag */
 	import { page } from "$app/stores"
 
 	$effect(() => {
