@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Tags</title>
+	<title>Tags - Adam Belko</title>
 </svelte:head>
 
 <div class="container">

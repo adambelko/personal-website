@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Adam Belko - Software Developer</title>
+	<title>Adam Belko - Software Developer and SEO</title>
 	<meta
 		content="Hey! I'm a software developer passionate about technology, code quality, building things for the web,
 	 creating user-friendly, aesthetically pleasing products."
@@ -15,12 +15,12 @@
 
 <div class="intro-container">
 	<div class="intro-text-area">
-		<p class="text-area-medium-font">Hey, I'm Adam</p>
+		<p class="text-area-medium-font">Hey, I'm Adam.</p>
 		<h1 class="text-area-h1">
 			<span class="text-area-highlighted">Software Developer</span>
-			<span>I build things for the web</span>
+			<span>turned into <span class="text-area-highlighted">SEO</span> enthusiast.</span>
 		</h1>
-		<p class="text-area-small-font">And I love the process of turning coffee into a code, one line at a time!</p>
+		<p class="text-area-small-font">I love obsessive research, making sense of data, and really good pasta.</p>
 	</div>
 	<a href="/about">
 		<button class="intro-btn">

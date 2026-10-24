@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.status}</title>
+	<title>{$page.status} - Adam Belko</title>
 </svelte:head>
 
 <div>

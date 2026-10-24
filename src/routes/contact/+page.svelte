@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Contact</title>
+	<title>Contact - Adam Belko</title>
 </svelte:head>
 
 <div class="contact-container">

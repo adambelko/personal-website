@@ -1,17 +1,21 @@
 <svelte:head>
-	<title>About</title>
+	<title>About - Adam Belko</title>
 </svelte:head>
 
 <div class="about-container">
 	<div class="intro-container">
 		<div class="intro-text-area">
 			<h1 class="about-h1">About me</h1>
-			<p>Hey, I'm a Software Developer based in Sydney with a passion for always learning something new.</p>
+			<p>
+				Hey, I'm a Software Developer by background based in Sydney, now exploring the world of SEO, AEO, and
+				GEO.
+			</p>
 			<br />
 			<p>
-				Even though I don't have many years of experience under my belt, I am very passionate about technology
-				and software, with a strong focus on code design, quality and reliability. I strive to build things
-				users love, with a keen eye for the way products look and the interactions they offer.
+				My background in web development taught me to look beyond how a website works under the hood. I’m now
+				applying that same curiosity to search, from technical SEO and site structure to understanding data and
+				user behaviour. I enjoy digging into problems, learning by doing, and figuring out what makes websites
+				perform better.
 			</p>
 			<br />
 		</div>

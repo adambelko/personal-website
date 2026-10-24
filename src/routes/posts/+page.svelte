@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Posts</title>
+	<title>Posts - Adam Belko</title>
 </svelte:head>
 
 <div class="container">
