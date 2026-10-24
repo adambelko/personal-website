@@ -13,6 +13,7 @@ import {
 } from '@sanity/ui'
 import {CloseIcon} from '@sanity/icons/Close'
 import {css, styled} from 'styled-components'
+import 'styled-components'
 
 const BlueColor = css`
   color: ${({theme}) => theme.sanity.color.muted.primary.enabled.fg};
@@ -36,7 +37,7 @@ export const GetStartedTutorial = () => {
   const rect = useElementSize(rootElement.current)
   const width = rect?.content?.width
   const isSmallScreen = width ? width < sanity.media[1] : false
-  const isProdEnv = process.env.NODE_ENV !== 'development'
+  const isProdEnv = import.meta.env.PROD
 
   const onClose = () => {
     window.localStorage.setItem('getstarted_closedTutorial', 'true')
@@ -63,7 +64,7 @@ export const GetStartedTutorial = () => {
             padding={isSmallScreen ? undefined : 3}
           />
         </Flex>
-        <Stack space={5}>
+        <Stack gap={5}>
           {!isSmallScreen && (
             <>
               <LabelContainer forwardedAs="p" align="center">
