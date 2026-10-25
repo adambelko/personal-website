@@ -22,7 +22,7 @@
 					<br />
 				</div>
 				<div class="intro-img-container">
-					<img src="/adam-belko-profile-photo.jpg" alt="adam-belko-profile-photo" />
+					<img src="/adam-belko-profile-photo.jpg" alt="Portrait of Adam Belko" />
 				</div>
 			</div>
 		</div>
