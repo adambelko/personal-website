@@ -6,21 +6,25 @@
 	<div class="intro-container">
 		<div class="intro-text-area">
 			<h1 class="about-h1">About me</h1>
-			<p>
-				Hey, I'm a Software Developer by background based in Sydney, now exploring the world of SEO, AEO, and
-				GEO.
-			</p>
-			<br />
-			<p>
-				My background in web development taught me to look beyond how a website works under the hood. I’m now
-				applying that same curiosity to search, from technical SEO and site structure to understanding data and
-				user behaviour. I enjoy digging into problems, learning by doing, and figuring out what makes websites
-				perform better.
-			</p>
-			<br />
-		</div>
-		<div class="intro-img-container">
-			<img src="/adam-belko-dev-illustration.svg" alt="adam-belko-dev-illustration" />
+			<div class="about-content">
+				<div class="about-content-text">
+					<p>
+						Hey, I'm a Software Developer by background based in Sydney, now exploring the world of SEO,
+						AEO, and GEO.
+					</p>
+					<br />
+					<p>
+						My background in web development taught me to look beyond how a website works under the hood.
+						I’m now applying that same curiosity to search, from technical SEO and site structure to
+						understanding data and user behaviour. I enjoy digging into problems, learning by doing, and
+						figuring out what makes websites perform better.
+					</p>
+					<br />
+				</div>
+				<div class="intro-img-container">
+					<img src="/adam-belko-profile-photo.jpg" alt="adam-belko-profile-photo" />
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -28,6 +32,8 @@
 		<div class="about-table-item">
 			<p>A few technologies I’ve been working with recently:</p>
 			<ul class="about-table-list">
+				<li>GSC & GA4</li>
+				<li>Screaming Frog</li>
 				<li>Javascript (ES6+)</li>
 				<li>Typescript</li>
 				<li>React and Next</li>
@@ -109,21 +115,38 @@
 	}
 
 	.intro-container {
-		display: flex;
 		margin-bottom: 2em;
 	}
 
 	.intro-text-area {
-		display: flex;
-		flex-direction: column;
-		width: 50%;
+		width: 100%;
 		padding-top: 20px;
-		padding-right: 12px;
+	}
+
+	.about-content {
+		display: flex;
+		gap: 40px;
+		width: 100%;
+	}
+
+	.about-content-text,
+	.intro-img-container {
+		flex: 1 1 0;
+		min-width: 0;
 	}
 
 	.intro-img-container {
-		padding-left: 12px;
-		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.intro-img-container img {
+		display: block;
+		width: 70%;
+		height: auto;
+		object-fit: contain;
+		border-radius: 8px;
 	}
 
 	.about-h1 {
@@ -239,16 +262,6 @@
 
 	/* Responsive styles */
 	@media (max-width: 1080px) {
-		.intro-text-area,
-		.intro-img-container {
-			width: 100%;
-			padding: 0;
-		}
-
-		.intro-container {
-			flex-direction: column;
-		}
-
 		.about-table-item {
 			width: 100%;
 		}
@@ -280,7 +293,6 @@
 		}
 
 		.about-table {
-			display: flex;
 			flex-direction: column;
 		}
 
@@ -289,7 +301,7 @@
 		}
 
 		.about-table-item-right-side {
-			border-left: none !important;
+			border-left: none;
 			border-top: 2px solid var(--hr-dividor-color);
 		}
 
@@ -303,7 +315,6 @@
 
 		.experience-container,
 		.section {
-			display: flex;
 			width: 100%;
 		}
 
@@ -323,6 +334,25 @@
 		.reference {
 			width: 100%;
 			max-width: 100%;
+		}
+	}
+
+	/* Stack intro text and image on mobile */
+	@media (max-width: 768px) {
+		.about-content {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.about-content-text,
+		.intro-img-container {
+			width: 100%;
+			flex: none;
+		}
+
+		.intro-img-container img {
+			width: 70%;
+			max-width: 300px;
 		}
 	}
 </style>
