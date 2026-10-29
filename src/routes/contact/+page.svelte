@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Contact - Adam Belko</title>
+	<meta name="description" content="Get in touch with Adam Belko" />
 </svelte:head>
 
 <div class="contact-container">

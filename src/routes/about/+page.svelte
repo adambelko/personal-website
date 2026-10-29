@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>About - Adam Belko</title>
+	<meta
+		name="description"
+		content="Adam Belko, a Sydney-based professional transitioning from software development into SEO."
+	/>
 </svelte:head>
 
 <div class="about-container">

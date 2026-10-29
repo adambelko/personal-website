@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.post.title}</title>
+	<title>{data.post.title} - Adam Belko</title>
 </svelte:head>
 
 <div class="container">

@@ -6,7 +6,11 @@
 </script>
 
 <svelte:head>
-	<title>Posts - Adam Belko</title>
+	<title>Blog Posts - Adam Belko</title>
+	<meta
+		name="description"
+		content="Explore articles by Adam Belko on web development, SEO, and everything about tech."
+	/>
 </svelte:head>
 
 <div class="container">
