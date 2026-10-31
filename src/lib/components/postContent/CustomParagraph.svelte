@@ -5,16 +5,15 @@
 	$: ({ style } = value)
 </script>
 
-<div>
-	{#if style === "normal"}
-		<p class="p">
-			<slot />
-		</p>
-	{/if}
-</div>
+{#if style === "normal"}
+	<p class="paragraph">
+		<slot />
+	</p>
+{/if}
 
 <style>
-	.p {
-		margin-top: 1rem;
+	.paragraph {
+		margin-bottom: 1.25rem;
+		line-height: 1.7;
 	}
 </style>

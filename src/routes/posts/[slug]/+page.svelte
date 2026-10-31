@@ -40,7 +40,7 @@
 
 		<div class="post-header">
 			<p class="small-description">{data.post.smallDescription}</p>
-			<img src={urlFor(data.post.titleImage).url()} alt={data.post.slug.current} />
+			<img src={urlFor(data.post.titleImage).url()} alt={data.post.titleImage.alt} />
 		</div>
 
 		<div class="post-content">
@@ -54,6 +54,27 @@
 		display: flex;
 		justify-content: center;
 		padding: 0 16px;
+	}
+
+	.post-content :global(ul) {
+		list-style-type: disc;
+		padding-left: 1.5rem;
+		margin: 1rem 0 1.5rem;
+	}
+
+	.post-content :global(ol) {
+		list-style-type: decimal;
+		padding-left: 1.5rem;
+		margin: 1rem 0 1.5rem;
+	}
+
+	.post-content :global(li) {
+		padding-left: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.post-content :global(ul ul) {
+		list-style-type: circle;
 	}
 
 	.post-container {
