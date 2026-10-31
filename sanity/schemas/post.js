@@ -63,14 +63,6 @@ export const postSchema = {
       description: 'A short summary used for previews and article listings.',
     },
 
-    // SEO settings
-    {
-      name: 'seoTitle',
-      type: 'string',
-      title: 'SEO Title',
-      description: 'Optional title for search engines. If empty, use the article title.',
-      validation: (Rule) => Rule.max(60),
-    },
     {
       name: 'metaDescription',
       type: 'text',

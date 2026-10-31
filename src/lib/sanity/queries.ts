@@ -16,7 +16,7 @@ export const postsFilteredByTagQuery = (slug: string) => {
 }
 
 export const singlePostQuery = (slug: string) => {
-	return `*[_type == "blog" && slug.current == "${slug}"]{${base}, content}`
+	return `*[_type == "blog" && slug.current == "${slug}"]{${base}, content, metaDescription}`
 }
 
 export const allTagsQuery = `*[_type == "tags"]`

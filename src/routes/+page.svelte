@@ -19,7 +19,9 @@
 			<span class="text-area-highlighted">Software Developer</span>
 			<span>turned into <span class="text-area-highlighted">SEO</span> enthusiast.</span>
 		</h1>
-		<p class="text-area-small-font">I love obsessive research, making sense of data, and really good pasta.</p>
+		<p class="text-area-small-font">
+			I love paying attention to detail, making sense of data, and really good pasta.
+		</p>
 	</div>
 	<a href="/about">
 		<button class="intro-btn">

@@ -22,6 +22,9 @@
 
 <svelte:head>
 	<title>{data.post.title} - Adam Belko</title>
+	{#if data.post.metaDescription}
+		<meta name="description" content={data.post.metaDescription} />
+	{/if}
 </svelte:head>
 
 <div class="container">
