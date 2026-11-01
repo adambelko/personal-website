@@ -17,10 +17,10 @@
 	</div>
 	<div class="platforms">
 		<a href="https://www.linkedin.com/in/adam-belko/" target="_blank">
-			<Icon icon="mdi:linkedin" width="60" height="60" style="color: black" />
+			<Icon icon="mdi:linkedin" width="50" height="50" style="color: black" />
 		</a>
 		<a href="https://github.com/adambelko" target="_blank">
-			<Icon icon="mdi:github" width="55" height="55" style="color: black" class="icon" />
+			<Icon icon="mdi:github" width="45" height="45" style="color: black" class="icon" />
 		</a>
 	</div>
 </div>
@@ -43,7 +43,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-size: 1.2em;
 		font-weight: 500;
 		line-height: 1.5em;
 		margin-bottom: 1.5rem;

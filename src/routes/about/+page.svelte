@@ -158,8 +158,7 @@
 	}
 
 	.intro-text-area p {
-		font-size: 1.2rem;
-		line-height: 1.5em;
+		line-height: 1.7em;
 	}
 
 	.about-table {
@@ -171,6 +170,8 @@
 
 	.about-table-item {
 		padding: 2.8em;
+		font-size: 17px;
+		line-height: 1.7;
 	}
 
 	.about-table-item p {
@@ -186,7 +187,6 @@
 		display: grid;
 		grid-template-columns: repeat(2, minmax(200px, 270px));
 		list-style: disc;
-		font-size: 1em;
 		font-weight: 400;
 		line-height: 1.5em;
 		margin-top: 1em;

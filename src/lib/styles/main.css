@@ -11,7 +11,7 @@
     --primary-color-orange-hover: #ffd426;
     --nav-bg-color: #fafafa;
     --bg-color: #ffffff;
-    --font-default-size: 17px;
+    --font-default-size: 19px;
     --hr-dividor-color: #e8e8e8;
 }
 
@@ -21,7 +21,6 @@ body {
     flex-direction: column;
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
     font-style: normal;
     font-size: var(--font-default-size);
     color: var(--font-color-primary-black);

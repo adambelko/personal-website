@@ -20,7 +20,7 @@
 			<span>turned into <span class="text-area-highlighted">SEO</span> enthusiast.</span>
 		</h1>
 		<p class="text-area-small-font">
-			I love paying attention to detail, making sense of data, and really good pasta.
+			I love paying attention to detail, making sense of data, and eating really good pasta.
 		</p>
 	</div>
 	<a href="/about">
@@ -119,7 +119,7 @@
 		gap: 0.3em;
 		margin: 1.5rem auto;
 		font-weight: bold;
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		text-underline-offset: 5px;
 		text-decoration: underline solid var(--primary-color-orange) 2px;
 	}

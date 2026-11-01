@@ -80,7 +80,7 @@
 	.post-container {
 		display: flex;
 		flex-direction: column;
-		max-width: 700px;
+		max-width: 730px;
 	}
 
 	.post-date-container {
@@ -108,7 +108,7 @@
 
 	.post-content,
 	.small-description {
-		font-size: 1.2rem;
+		/*font-size: 1.2rem;*/
 		line-height: 1.5em;
 	}
 
