@@ -8,6 +8,7 @@
 <svelte:head>
 	<title>Adam Belko - Software Developer and SEO</title>
 	<meta
+		name="description"
 		content="Hey! I'm a software developer passionate about technology, recently diving into the world of SEO and exploring how websites perform in search."
 	/>
 </svelte:head>

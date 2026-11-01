@@ -2,12 +2,14 @@
 	import Icon from "@iconify/svelte"
 	import PostList from "$lib/components/PostList.svelte"
 	import TagList from "$lib/components/TagList.svelte"
+	import { toUpperCase } from "$lib/helpers/toUpperCase.js"
 
 	export let data
 </script>
 
 <svelte:head>
-	<title>Tags - Adam Belko</title>
+	<title>{`${toUpperCase(data.slug)} - Adam Belko.`}</title>
+	<meta name="description" content={`Explore posts tagged “${toUpperCase(data.slug)}” by Adam Belko.`} />
 </svelte:head>
 
 <div class="container">
