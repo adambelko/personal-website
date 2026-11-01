@@ -6,10 +6,14 @@
 	import CustomHeading from "$lib/components/postContent/CustomHeading.svelte"
 	import CustomParagraph from "$lib/components/postContent/CustomParagraph.svelte"
 	import Link from "$lib/components/postContent/Link.svelte"
+	import Image from "$lib/components/postContent/Image.svelte"
 
 	export let data
 
 	const postContent = {
+		types: {
+			image: Image
+		},
 		marks: {
 			link: Link
 		},
@@ -75,6 +79,14 @@
 
 	.post-content :global(ul ul) {
 		list-style-type: circle;
+	}
+
+	.post-content :global(code) {
+		padding: 0.15em 0.35em;
+		border-radius: 4px;
+		background: #f1f1f1;
+		font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+		font-size: 0.9em;
 	}
 
 	.post-container {
