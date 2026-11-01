@@ -19,7 +19,7 @@ html,
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Figtree", sans-serif;
+    font-family: "Figtree Variable", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: var(--font-default-size);
