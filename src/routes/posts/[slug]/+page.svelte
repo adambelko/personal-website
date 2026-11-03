@@ -9,7 +9,6 @@
 	import Image from "$lib/components/postContent/Image.svelte"
 
 	export let data
-	console.log(data)
 
 	const postContent = {
 		types: {
@@ -23,8 +22,6 @@
 			h2: CustomHeading
 		}
 	}
-
-	console.log(formatDate(data.post.publishedAt))
 </script>
 
 <svelte:head>
