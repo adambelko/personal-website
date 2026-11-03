@@ -21,12 +21,12 @@ export const postSchema = {
     },
     {
       name: 'publishedAt',
-      type: 'datetime',
+      type: 'date',
       title: 'Published Date',
     },
     {
       name: 'updatedAt',
-      type: 'datetime',
+      type: 'date',
       title: 'Last Updated',
     },
     {
@@ -61,6 +61,7 @@ export const postSchema = {
       title: 'Short Description',
       rows: 3,
       description: 'A short summary used for previews and article listings.',
+      validation: (Rule) => Rule.required(),
     },
 
     {
@@ -70,7 +71,7 @@ export const postSchema = {
       rows: 3,
       description:
         'Write a concise search snippet. Around 150–160 characters is a useful guideline.',
-      validation: (Rule) => Rule.max(160),
+      validation: (Rule) => Rule.max(160).required(),
     },
     {
       name: 'focusKeyword',

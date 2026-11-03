@@ -3,6 +3,7 @@ const base = `
     slug,
     smallDescription,
     _createdAt,
+    publishedAt,
     titleImage
 `
 

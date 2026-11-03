@@ -18,7 +18,7 @@
 				<div class="post-text-section">
 					<div class="post-date-container">
 						<Icon icon="wi:time-4" width="1.2em" height="1.2em" style="color: black" />
-						<span>{formatDate(post._createdAt)}</span>
+						<span>{formatDate(post.publishedAt)}</span>
 					</div>
 					<a href="/posts/{post.slug.current}" class="post-title">{post.title}</a>
 					<p class="post-description">{post.smallDescription}</p>

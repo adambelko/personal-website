@@ -9,6 +9,7 @@
 	import Image from "$lib/components/postContent/Image.svelte"
 
 	export let data
+	console.log(data)
 
 	const postContent = {
 		types: {
@@ -22,20 +23,21 @@
 			h2: CustomHeading
 		}
 	}
+
+	console.log(formatDate(data.post.publishedAt))
 </script>
 
 <svelte:head>
 	<title>{data.post.title} - Adam Belko</title>
-	{#if data.post.metaDescription}
-		<meta name="description" content={data.post.metaDescription} />
-	{/if}
+	<meta name="description" content={data.post.metaDescription} />
 </svelte:head>
 
 <div class="container">
 	<article class="post-container">
 		<div class="post-date-container">
 			<Icon icon="wi:time-4" width="1.2em" height="1.2em" style="color: black" />
-			<span>{formatDate(data.post._createdAt)}</span>
+
+			<span>{formatDate(data.post.publishedAt)}</span>
 		</div>
 
 		<h1 class="post-title">
