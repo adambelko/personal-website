@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.post.title} - Adam Belko</title>
+	<title>{data.post.title}</title>
 	<meta name="description" content={data.post.metaDescription} />
 </svelte:head>
 
